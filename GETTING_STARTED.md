@@ -9,7 +9,7 @@ A complete **Universal Report Analyzer** system that converts ANY report format 
 1. **📤 Dynamic File Upload** - Upload files after the app is running (no restart needed)
 2. **🔍 Multi-Format Support** - Handles HTML, JSON, CSV, and Excel files
 3. **🎯 Format Detection** - Automatically identifies K6, Locust, JMeter, Grafana, and generic reports
-4. **📊 Metric Extraction** - Pulls latency, throughput, errors, and custom metrics
+4. **Metric Extraction** - Pulls latency, throughput, errors, and custom metrics
 5. **💡 Insights Generation** - Generates performance recommendations
 6. **🌐 Web Interface** - Beautiful UI with drag-drop upload and results display
 7. **⚡ Batch Processing** - Process multiple files at once
@@ -158,7 +158,7 @@ The system automatically extracts:
 
 The system provides analysis for:
 
-### 🔴 Performance Issues
+### Performance Issues
 - High error rates (critical threshold > 5%)
 - Slow response times (P95 > 1000ms)
 - Extreme outliers (max > 5 × P95)
@@ -301,7 +301,7 @@ curl http://localhost:5000/health
 |---------|---------|
 | 📤 Drag & Drop Upload | No command line needed, intuitive |
 | 🔍 Auto-Detection | Works with ANY report format |
-| 📊 Metric Extraction | Automatic metric identification |
+| Metric Extraction | Automatic metric identification |
 | 💡 Insights | Instant performance analysis |
 | 🌐 Web UI | Beautiful, responsive interface |
 | ⚡ Fast Processing | Sub-second processing per file |
@@ -384,7 +384,7 @@ Edit `templates/index.html` for styling and functionality changes.
 You now have a **production-ready Universal Report Analyzer** with:
 - ✨ Beautiful web interface
 - 🎯 Multi-format support (HTML, JSON, CSV, Excel)
-- 📊 Automatic metric extraction
+- Automatic metric extraction
 - 💡 Intelligent performance insights
 - 🔄 Batch processing capability
 - 📁 Dynamic file upload (no restart needed)

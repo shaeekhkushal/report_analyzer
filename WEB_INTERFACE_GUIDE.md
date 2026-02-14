@@ -69,11 +69,11 @@ The system automatically:
 - Identifies anomalies and warnings
 
 ### Insights Generated
-- ⚠️ **Failure Rate Analysis** - Critical/Warning/Good status
-- 📈 **Latency Analysis** - P95, average response times
+- **Failure Rate Analysis** - Critical/Warning/Good status
+- **Latency Analysis** - P95, average response times
 - 🔍 **Outliers Detection** - Unusual spike patterns
 - ⏱️ **Extreme Stalls** - Detection of very long delays
-- 📊 **Throughput Analysis** - Requests/second trends
+- **Throughput Analysis** - Requests/second trends
 
 ---
 
@@ -169,7 +169,7 @@ report_analyzer/
 - Use "Load Sample Reports" to test the system
 - Processing typically takes < 1 second per file
 
-### 📊 Best Practices
+### Best Practices
 - Organize reports by test type
 - Upload baseline reports first for comparison
 - Use consistent naming (e.g., `smoke-2026-02-09.html`)

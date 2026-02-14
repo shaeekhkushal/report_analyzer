@@ -124,7 +124,7 @@ report_sample/
 - ✅ 1 K6 JSON report detected and parsed
 - ✅ 1 CSV report detected and parsed
 - ✅ 1 Excel report detected and parsed
-- ⚠️ 3 unknown HTML files (templates with no metrics)
+- 3 unknown HTML files (templates with no metrics)
 
 ### How to Add New Report Types
 

@@ -235,7 +235,7 @@ MAX_FILE_SIZE = 100 * 1024 * 1024  # 100MB instead of 50MB
 
 ---
 
-## 📊 Supported Formats
+## Supported Formats
 
 | Format | Extension | Tested |
 |--------|-----------|--------|
@@ -270,8 +270,8 @@ For each metric, insights include:
 ```
 ✅ "Response time is good (450ms P95)"
 ✅ "Throughput is stable (500 req/sec)"
-⚠️  "Error rate is moderate (2%)"
-🔴 "Detected performance anomalies"
+"Error rate is moderate (2%)"
+"Detected performance anomalies"
 ```
 
 ---
