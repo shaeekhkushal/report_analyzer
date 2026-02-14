@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Report Analyzer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .upload-area:hover {
+            background: #f0f4ff;
+            border-color: #764ba2;
+        }
+
+        .upload-area.dragging {
+            background: #e8eaff;
+            border-color: #764ba2;
+        }
+
+        .upload-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .file-input-label {
+            color: #667eea;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .file-input-label:hover {
+            color: #764ba2;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+            color: white;
+            font-size: 0.9em;
+            padding: 8px 16px;
+        }
+
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+
+        .reports {
+            max-height: 700px;
+            overflow-y: auto;
+        }
+
+        .report-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 0;
+            margin-bottom: 12px;
+            transition: all 0.3s;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .report-item:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+
+        .report-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .report-title {
+            flex: 1;
+        }
+
+        .report-filename {
+            font-weight: bold;
+            color: white;
+            word-break: break-word;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .report-meta {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .report-type {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .report-type.k6 { background: #1976d2; }
+        .report-type.json { background: #7b1fa2; }
+        .report-type.csv { background: #388e3c; }
+        .report-type.xlsx { background: #f57c00; }
+        .report-type.analytics { background: #c2185b; }
+        .report-type.unknown { background: #666; }
+
+        .report-content {
+            padding: 20px;
+        }
+
+        .report-section {
+            margin-bottom: 25px;
+        }
+
+        .report-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title::before {
+            content: attr(data-icon);
+            font-size: 1.2em;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .metric-card {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .metric-card:hover {
+            background: #f0f4ff;
+            border-color: #667eea;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+
+        .metric-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .metric-unit {
+            font-size: 0.8em;
+            color: #999;
+            margin-left: 4px;
+        }
+
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+
+        .metrics-table th {
+            background: #f0f4ff;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .metrics-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .metrics-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .metric-name {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .metric-value-cell {
+            color: #333;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .insights-container {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .insight-item {
+            padding: 8px 0;
+            color: #2e7d32;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            border-bottom: 1px solid rgba(76, 175, 80, 0.1);
+        }
+
+        .insight-item:last-child {
+            border-bottom: none;
+        }
+
+        .insight-icon {
+            flex-shrink: 0;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .insight-text {
+            flex: 1;
+        }
+
+        .warning {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 4px solid #ff9800;
+            color: #e65100;
+        }
+
+        .warning .insight-icon {
+            color: #ff9800;
+        }
+
+        .critical {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border-left: 4px solid #f44336;
+            color: #c62828;
+        }
+
+        .critical .insight-icon {
+            color: #f44336;
+        }
+
+        .success-message {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+            border-left: 4px solid #4caf50;
+            color: #2e7d32;
+        }
+
+        .error-message {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 12px;
+            border-radius: 4px;
+            color: #c62828;
+            margin-bottom: 12px;
+        }
+
+        .success-message {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 12px;
+            border-radius: 4px;
+            color: #2e7d32;
+            margin-bottom: 12px;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .file-count {
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            padding: 2px 10px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        .tab-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            background: #e0e0e0;
+            color: #333;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        footer {
+            background: #f8f9fa;
+            border-top: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Universal Report Analyzer</h1>
+            <p>Upload and analyze performance reports in any format (HTML, JSON, CSV, Excel)</p>
+        </header>
+
+        <div class="content">
+            <!-- Upload Section -->
+            <div class="section">
+                <h2>📤 Upload Reports</h2>
+                
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <p>Drag & drop files here or <span class="file-input-label">click to browse</span></p>
+                    <small style="color: #999; margin-top: 10px;">
+                        Supported: HTML, JSON, CSV, XLSX (Max 50MB)
+                    </small>
+                    <input type="file" id="fileInput" multiple accept=".html,.json,.csv,.xlsx,.xls">
+                </div>
+
+                <button class="btn btn-primary" onclick="uploadFiles()">Upload Files</button>
+                <button class="btn btn-secondary" onclick="loadSampleReports()" style="margin-top: 10px;">Load Sample Reports</button>
+                <button class="btn btn-danger" onclick="clearUploads()" style="margin-top: 10px;">Clear All</button>
+
+                <div id="uploadMessage" style="margin-top: 15px;"></div>
+                <div id="uploadLoading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Uploading files...</p>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="section">
+                <h2>
+                    📋 Analyzed Reports
+                    <span class="file-count" id="reportCount">0</span>
+                </h2>
+
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="switchTab('uploaded')">Uploaded</button>
+                    <button class="tab-btn" onclick="switchTab('sample')">Samples</button>
+                </div>
+
+                <div id="uploadedReports" class="reports"></div>
+                <div id="sampleReports" class="reports" style="display: none;"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>💡 Tip: Drop multiple files at once to analyze them all. Supports K6, Locust, JMeter, and more!</p>
+        </footer>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const uploadedReports = document.getElementById('uploadedReports');
+        const sampleReports = document.getElementById('sampleReports');
+        const uploadMessage = document.getElementById('uploadMessage');
+        const uploadLoading = document.getElementById('uploadLoading');
+
+        // Drag and drop
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragging');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragging');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragging');
+            fileInput.files = e.dataTransfer.files;
+            uploadFiles();
+        });
+
+        uploadArea.addEventListener('click', () => fileInput.click());
+
+        function uploadFiles() {
+            if (fileInput.files.length === 0) {
+                showMessage('Please select files first', 'error');
+                return;
+            }
+
+            uploadLoading.style.display = 'block';
+            uploadMessage.innerHTML = '';
+
+            const formData = new FormData();
+            for (let file of fileInput.files) {
+                formData.append('files', file);
+            }
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(results => {
+                uploadLoading.style.display = 'none';
+                let successCount = 0;
+                results.forEach(result => {
+                    if (result.success) {
+                        successCount++;
+                    } else {
+                        showMessage(`Error: ${result.filename} - ${result.error}`, 'error');
+                    }
+                });
+                if (successCount > 0) {
+                    showMessage(`✅ Successfully processed ${successCount} file(s)`, 'success');
+                    fileInput.value = '';
+                    loadUploadedReports();
+                }
+            })
+            .catch(err => {
+                uploadLoading.style.display = 'none';
+                showMessage(`Upload failed: ${err}`, 'error');
+            });
+        }
+
+        function loadSampleReports() {
+            uploadLoading.style.display = 'block';
+            fetch('/sample-reports')
+            .then(res => res.json())
+            .then(results => {
+                uploadLoading.style.display = 'none';
+                displayReports(results, sampleReports);
+                switchTab('sample');
+            })
+            .catch(err => {
+                uploadLoading.style.display = 'none';
+                showMessage(`Failed to load sample reports: ${err}`, 'error');
+            });
+        }
+
+        function loadUploadedReports() {
+            fetch('/uploaded-reports')
+            .then(res => res.json())
+            .then(results => {
+                displayReports(results, uploadedReports);
+                updateReportCount(results.length);
+            })
+            .catch(err => console.error(err));
+        }
+
+        function formatMetricName(name) {
+            // Convert technical names to readable labels
+            const labels = {
+                'failed_requests': 'Failed Requests',
+                'failure_rate': 'Failure Rate',
+                'http_duration_avg': 'Average Response Time',
+                'http_duration_max': 'Maximum Response Time',
+                'http_duration_min': 'Minimum Response Time',
+                'http_duration_median': 'Median Response Time',
+                'http_duration_p90': 'P90 Response Time',
+                'http_duration_p95': 'P95 Response Time',
+                'http_duration_p99': 'P99 Response Time',
+                'total_requests': 'Total Requests',
+                'success_rate': 'Success Rate',
+                'throughput': 'Throughput',
+                'concurrent_users': 'Concurrent Users',
+                'test_duration': 'Test Duration'
+            };
+            return labels[name] || name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        function groupMetrics(metrics) {
+            const groups = {
+                'Response Time': [],
+                'Success & Errors': [],
+                'Throughput': [],
+                'Other': []
+            };
+
+            metrics.forEach(m => {
+                if (m.name.includes('duration') || m.name.includes('latency')) {
+                    groups['Response Time'].push(m);
+                } else if (m.name.includes('failure') || m.name.includes('error') || m.name.includes('success')) {
+                    groups['Success & Errors'].push(m);
+                } else if (m.name.includes('throughput') || m.name.includes('requests')) {
+                    groups['Throughput'].push(m);
+                } else {
+                    groups['Other'].push(m);
+                }
+            });
+
+            return groups;
+        }
+
+        function displayReports(results, container) {
+            if (results.length === 0) {
+                container.innerHTML = '<p style="color: #999; text-align: center; padding: 20px;">No reports yet</p>';
+                return;
+            }
+
+            container.innerHTML = results.map(result => {
+                if (result.error) {
+                    return `
+                        <div class="report-item">
+                            <div class="report-header" style="background: #f44336;">
+                                <div class="report-title">
+                                    <div class="report-filename">${result.filename}</div>
+                                </div>
+                            </div>
+                            <div class="report-content">
+                                <div class="error-message">
+                                    Error: ${result.error}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                const metricGroups = groupMetrics(result.metrics);
+                const metricsHtml = Object.entries(metricGroups)
+                    .filter(([_, metrics]) => metrics.length > 0)
+                    .map(([group, metrics]) => `
+                        <div class="report-section">
+                            <div class="section-title" data-icon="📊">${group}</div>
+                            <div class="metrics-grid">
+                                ${metrics.map(m => `
+                                    <div class="metric-card">
+                                        <div class="metric-label">${formatMetricName(m.name)}</div>
+                                        <div class="metric-value">
+                                            ${m.value.toFixed(2)}
+                                            <span class="metric-unit">${m.unit}</span>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('');
+
+                const insightsHtml = result.insights.length > 0
+                    ? `
+                        <div class="report-section">
+                            <div class="section-title" data-icon="💡">Key Insights & Analysis</div>
+                            <div class="insights-container success-message">
+                                ${result.insights.map(insight => {
+                                    let iconClass = '✓';
+                                    let containerClass = '';
+                                    if (insight.includes('high') || insight.includes('critical') || insight.includes('severe')) {
+                                        iconClass = '⚠';
+                                        containerClass = 'critical';
+                                    } else if (insight.includes('moderate') || insight.includes('elevated')) {
+                                        iconClass = '⚠';
+                                        containerClass = 'warning';
+                                    }
+                                    return `
+                                        <div class="insight-item ${containerClass}">
+                                            <span class="insight-icon">${iconClass}</span>
+                                            <span class="insight-text">${insight}</span>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                    `
+                    : '';
+
+                const executiveSummary = `
+                    <div class="report-section">
+                        <div class="section-title" data-icon="📄">Executive Summary</div>
+                        <table class="metrics-table">
+                            <tr>
+                                <td style="padding: 10px;"><strong>Report Format:</strong></td>
+                                <td style="padding: 10px;">${result.file_type.toUpperCase()}</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;"><strong>Report Type:</strong></td>
+                                <td style="padding: 10px;">
+                                    <span class="report-type ${result.report_type.toLowerCase()}">${result.report_type}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;"><strong>Total Metrics:</strong></td>
+                                <td style="padding: 10px;">${result.metrics.length}</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;"><strong>Analysis Status:</strong></td>
+                                <td style="padding: 10px;"><span style="color: #4caf50; font-weight: bold;">✓ Complete</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                `;
+
+                return `
+                    <div class="report-item">
+                        <div class="report-header">
+                            <div class="report-title">
+                                <div class="report-filename">📊 ${result.filename}</div>
+                                <div class="report-meta">Performance Report Analysis</div>
+                            </div>
+                            <span class="report-type ${result.report_type.toLowerCase()}">${result.report_type}</span>
+                        </div>
+                        <div class="report-content">
+                            ${executiveSummary}
+                            ${metricsHtml}
+                            ${insightsHtml}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function clearUploads() {
+            if (!confirm('Are you sure? This will delete all uploaded files.')) return;
+
+            fetch('/clear-uploads', { method: 'POST' })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    showMessage('✅ Uploads cleared', 'success');
+                    uploadedReports.innerHTML = '';
+                    updateReportCount(0);
+                }
+            })
+            .catch(err => showMessage(`Failed: ${err}`, 'error'));
+        }
+
+        function switchTab(tab) {
+            const uploadedBtn = document.querySelectorAll('.tab-btn')[0];
+            const sampleBtn = document.querySelectorAll('.tab-btn')[1];
+
+            if (tab === 'uploaded') {
+                uploadedReports.style.display = 'block';
+                sampleReports.style.display = 'none';
+                uploadedBtn.classList.add('active');
+                sampleBtn.classList.remove('active');
+            } else {
+                uploadedReports.style.display = 'none';
+                sampleReports.style.display = 'block';
+                uploadedBtn.classList.remove('active');
+                sampleBtn.classList.add('active');
+            }
+        }
+
+        function showMessage(text, type) {
+            const className = type === 'error' ? 'error-message' : 'success-message';
+            uploadMessage.innerHTML = `<div class="${className}">${text}</div>`;
+            setTimeout(() => {
+                uploadMessage.innerHTML = '';
+            }, 5000);
+        }
+
+        function updateReportCount(count) {
+            document.getElementById('reportCount').textContent = count;
+        }
+
+        // Load uploaded reports on page load
+        loadUploadedReports();
+    </script>
+</body>
+</html>

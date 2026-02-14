@@ -1,0 +1,4502 @@
+[
+  {
+    "test_id": 10000,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 392,
+    "p95_response_time_ms": 542,
+    "requests": 8354,
+    "errors": 42,
+    "timestamp": "2026-02-14T18:00:00"
+  },
+  {
+    "test_id": 10001,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 234,
+    "p95_response_time_ms": 430,
+    "requests": 17080,
+    "errors": 40,
+    "timestamp": "2026-02-14T18:01:00"
+  },
+  {
+    "test_id": 10002,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 443,
+    "p95_response_time_ms": 371,
+    "requests": 19777,
+    "errors": 6,
+    "timestamp": "2026-02-14T18:02:00"
+  },
+  {
+    "test_id": 10003,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 213,
+    "p95_response_time_ms": 784,
+    "requests": 16334,
+    "errors": 13,
+    "timestamp": "2026-02-14T18:03:00"
+  },
+  {
+    "test_id": 10004,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 336,
+    "p95_response_time_ms": 756,
+    "requests": 11642,
+    "errors": 46,
+    "timestamp": "2026-02-14T18:04:00"
+  },
+  {
+    "test_id": 10005,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 405,
+    "p95_response_time_ms": 310,
+    "requests": 4752,
+    "errors": 31,
+    "timestamp": "2026-02-14T18:05:00"
+  },
+  {
+    "test_id": 10006,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 110,
+    "p95_response_time_ms": 605,
+    "requests": 5910,
+    "errors": 43,
+    "timestamp": "2026-02-14T18:06:00"
+  },
+  {
+    "test_id": 10007,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 107,
+    "p95_response_time_ms": 433,
+    "requests": 5303,
+    "errors": 24,
+    "timestamp": "2026-02-14T18:07:00"
+  },
+  {
+    "test_id": 10008,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 104,
+    "p95_response_time_ms": 560,
+    "requests": 15353,
+    "errors": 44,
+    "timestamp": "2026-02-14T18:08:00"
+  },
+  {
+    "test_id": 10009,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 133,
+    "p95_response_time_ms": 421,
+    "requests": 6602,
+    "errors": 46,
+    "timestamp": "2026-02-14T18:09:00"
+  },
+  {
+    "test_id": 10010,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 483,
+    "p95_response_time_ms": 483,
+    "requests": 7328,
+    "errors": 26,
+    "timestamp": "2026-02-14T18:10:00"
+  },
+  {
+    "test_id": 10011,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 186,
+    "p95_response_time_ms": 662,
+    "requests": 13348,
+    "errors": 25,
+    "timestamp": "2026-02-14T18:11:00"
+  },
+  {
+    "test_id": 10012,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 418,
+    "p95_response_time_ms": 329,
+    "requests": 7174,
+    "errors": 20,
+    "timestamp": "2026-02-14T18:12:00"
+  },
+  {
+    "test_id": 10013,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 217,
+    "p95_response_time_ms": 655,
+    "requests": 8342,
+    "errors": 22,
+    "timestamp": "2026-02-14T18:13:00"
+  },
+  {
+    "test_id": 10014,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 304,
+    "p95_response_time_ms": 730,
+    "requests": 14183,
+    "errors": 28,
+    "timestamp": "2026-02-14T18:14:00"
+  },
+  {
+    "test_id": 10015,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 410,
+    "p95_response_time_ms": 766,
+    "requests": 1953,
+    "errors": 22,
+    "timestamp": "2026-02-14T18:15:00"
+  },
+  {
+    "test_id": 10016,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 178,
+    "p95_response_time_ms": 513,
+    "requests": 3225,
+    "errors": 19,
+    "timestamp": "2026-02-14T18:16:00"
+  },
+  {
+    "test_id": 10017,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 479,
+    "p95_response_time_ms": 292,
+    "requests": 19012,
+    "errors": 44,
+    "timestamp": "2026-02-14T18:17:00"
+  },
+  {
+    "test_id": 10018,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 197,
+    "p95_response_time_ms": 249,
+    "requests": 16563,
+    "errors": 50,
+    "timestamp": "2026-02-14T18:18:00"
+  },
+  {
+    "test_id": 10019,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 492,
+    "p95_response_time_ms": 357,
+    "requests": 2692,
+    "errors": 23,
+    "timestamp": "2026-02-14T18:19:00"
+  },
+  {
+    "test_id": 10020,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 297,
+    "p95_response_time_ms": 603,
+    "requests": 13815,
+    "errors": 49,
+    "timestamp": "2026-02-14T18:20:00"
+  },
+  {
+    "test_id": 10021,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 478,
+    "p95_response_time_ms": 782,
+    "requests": 13243,
+    "errors": 46,
+    "timestamp": "2026-02-14T18:21:00"
+  },
+  {
+    "test_id": 10022,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 358,
+    "p95_response_time_ms": 292,
+    "requests": 3711,
+    "errors": 12,
+    "timestamp": "2026-02-14T18:22:00"
+  },
+  {
+    "test_id": 10023,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 414,
+    "p95_response_time_ms": 246,
+    "requests": 12835,
+    "errors": 28,
+    "timestamp": "2026-02-14T18:23:00"
+  },
+  {
+    "test_id": 10024,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 107,
+    "p95_response_time_ms": 682,
+    "requests": 12331,
+    "errors": 45,
+    "timestamp": "2026-02-14T18:24:00"
+  },
+  {
+    "test_id": 10025,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 324,
+    "p95_response_time_ms": 407,
+    "requests": 16202,
+    "errors": 2,
+    "timestamp": "2026-02-14T18:25:00"
+  },
+  {
+    "test_id": 10026,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 294,
+    "p95_response_time_ms": 268,
+    "requests": 2672,
+    "errors": 34,
+    "timestamp": "2026-02-14T18:26:00"
+  },
+  {
+    "test_id": 10027,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 264,
+    "p95_response_time_ms": 596,
+    "requests": 7329,
+    "errors": 29,
+    "timestamp": "2026-02-14T18:27:00"
+  },
+  {
+    "test_id": 10028,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 383,
+    "p95_response_time_ms": 448,
+    "requests": 14577,
+    "errors": 32,
+    "timestamp": "2026-02-14T18:28:00"
+  },
+  {
+    "test_id": 10029,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 303,
+    "p95_response_time_ms": 226,
+    "requests": 4138,
+    "errors": 3,
+    "timestamp": "2026-02-14T18:29:00"
+  },
+  {
+    "test_id": 10030,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 266,
+    "p95_response_time_ms": 316,
+    "requests": 13952,
+    "errors": 42,
+    "timestamp": "2026-02-14T18:30:00"
+  },
+  {
+    "test_id": 10031,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 419,
+    "p95_response_time_ms": 759,
+    "requests": 17345,
+    "errors": 0,
+    "timestamp": "2026-02-14T18:31:00"
+  },
+  {
+    "test_id": 10032,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 425,
+    "p95_response_time_ms": 323,
+    "requests": 14680,
+    "errors": 23,
+    "timestamp": "2026-02-14T18:32:00"
+  },
+  {
+    "test_id": 10033,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 492,
+    "p95_response_time_ms": 409,
+    "requests": 11329,
+    "errors": 1,
+    "timestamp": "2026-02-14T18:33:00"
+  },
+  {
+    "test_id": 10034,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 475,
+    "p95_response_time_ms": 610,
+    "requests": 14135,
+    "errors": 35,
+    "timestamp": "2026-02-14T18:34:00"
+  },
+  {
+    "test_id": 10035,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 494,
+    "p95_response_time_ms": 500,
+    "requests": 11389,
+    "errors": 15,
+    "timestamp": "2026-02-14T18:35:00"
+  },
+  {
+    "test_id": 10036,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 232,
+    "p95_response_time_ms": 286,
+    "requests": 10371,
+    "errors": 21,
+    "timestamp": "2026-02-14T18:36:00"
+  },
+  {
+    "test_id": 10037,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 139,
+    "p95_response_time_ms": 377,
+    "requests": 4738,
+    "errors": 23,
+    "timestamp": "2026-02-14T18:37:00"
+  },
+  {
+    "test_id": 10038,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 362,
+    "p95_response_time_ms": 545,
+    "requests": 15358,
+    "errors": 1,
+    "timestamp": "2026-02-14T18:38:00"
+  },
+  {
+    "test_id": 10039,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 479,
+    "p95_response_time_ms": 570,
+    "requests": 5648,
+    "errors": 42,
+    "timestamp": "2026-02-14T18:39:00"
+  },
+  {
+    "test_id": 10040,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 189,
+    "p95_response_time_ms": 398,
+    "requests": 11457,
+    "errors": 11,
+    "timestamp": "2026-02-14T18:40:00"
+  },
+  {
+    "test_id": 10041,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 411,
+    "p95_response_time_ms": 377,
+    "requests": 19444,
+    "errors": 4,
+    "timestamp": "2026-02-14T18:41:00"
+  },
+  {
+    "test_id": 10042,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 174,
+    "p95_response_time_ms": 395,
+    "requests": 7653,
+    "errors": 13,
+    "timestamp": "2026-02-14T18:42:00"
+  },
+  {
+    "test_id": 10043,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 461,
+    "p95_response_time_ms": 210,
+    "requests": 6353,
+    "errors": 49,
+    "timestamp": "2026-02-14T18:43:00"
+  },
+  {
+    "test_id": 10044,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 122,
+    "p95_response_time_ms": 720,
+    "requests": 1597,
+    "errors": 6,
+    "timestamp": "2026-02-14T18:44:00"
+  },
+  {
+    "test_id": 10045,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 283,
+    "p95_response_time_ms": 413,
+    "requests": 9553,
+    "errors": 16,
+    "timestamp": "2026-02-14T18:45:00"
+  },
+  {
+    "test_id": 10046,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 468,
+    "p95_response_time_ms": 253,
+    "requests": 17471,
+    "errors": 48,
+    "timestamp": "2026-02-14T18:46:00"
+  },
+  {
+    "test_id": 10047,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 477,
+    "p95_response_time_ms": 510,
+    "requests": 2745,
+    "errors": 41,
+    "timestamp": "2026-02-14T18:47:00"
+  },
+  {
+    "test_id": 10048,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 143,
+    "p95_response_time_ms": 525,
+    "requests": 13259,
+    "errors": 39,
+    "timestamp": "2026-02-14T18:48:00"
+  },
+  {
+    "test_id": 10049,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 339,
+    "p95_response_time_ms": 456,
+    "requests": 6406,
+    "errors": 15,
+    "timestamp": "2026-02-14T18:49:00"
+  },
+  {
+    "test_id": 10050,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 217,
+    "p95_response_time_ms": 408,
+    "requests": 7494,
+    "errors": 26,
+    "timestamp": "2026-02-14T18:50:00"
+  },
+  {
+    "test_id": 10051,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 328,
+    "p95_response_time_ms": 643,
+    "requests": 3345,
+    "errors": 37,
+    "timestamp": "2026-02-14T18:51:00"
+  },
+  {
+    "test_id": 10052,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 308,
+    "p95_response_time_ms": 797,
+    "requests": 11468,
+    "errors": 11,
+    "timestamp": "2026-02-14T18:52:00"
+  },
+  {
+    "test_id": 10053,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 157,
+    "p95_response_time_ms": 313,
+    "requests": 7157,
+    "errors": 25,
+    "timestamp": "2026-02-14T18:53:00"
+  },
+  {
+    "test_id": 10054,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 434,
+    "p95_response_time_ms": 742,
+    "requests": 14071,
+    "errors": 38,
+    "timestamp": "2026-02-14T18:54:00"
+  },
+  {
+    "test_id": 10055,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 473,
+    "p95_response_time_ms": 501,
+    "requests": 1639,
+    "errors": 16,
+    "timestamp": "2026-02-14T18:55:00"
+  },
+  {
+    "test_id": 10056,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 383,
+    "p95_response_time_ms": 218,
+    "requests": 7307,
+    "errors": 9,
+    "timestamp": "2026-02-14T18:56:00"
+  },
+  {
+    "test_id": 10057,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 191,
+    "p95_response_time_ms": 202,
+    "requests": 4314,
+    "errors": 23,
+    "timestamp": "2026-02-14T18:57:00"
+  },
+  {
+    "test_id": 10058,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 208,
+    "p95_response_time_ms": 657,
+    "requests": 13371,
+    "errors": 9,
+    "timestamp": "2026-02-14T18:58:00"
+  },
+  {
+    "test_id": 10059,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 144,
+    "p95_response_time_ms": 560,
+    "requests": 1425,
+    "errors": 35,
+    "timestamp": "2026-02-14T18:59:00"
+  },
+  {
+    "test_id": 10060,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 429,
+    "p95_response_time_ms": 584,
+    "requests": 13848,
+    "errors": 42,
+    "timestamp": "2026-02-14T19:00:00"
+  },
+  {
+    "test_id": 10061,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 479,
+    "p95_response_time_ms": 270,
+    "requests": 2737,
+    "errors": 33,
+    "timestamp": "2026-02-14T19:01:00"
+  },
+  {
+    "test_id": 10062,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 406,
+    "p95_response_time_ms": 716,
+    "requests": 15285,
+    "errors": 7,
+    "timestamp": "2026-02-14T19:02:00"
+  },
+  {
+    "test_id": 10063,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 306,
+    "p95_response_time_ms": 335,
+    "requests": 5007,
+    "errors": 3,
+    "timestamp": "2026-02-14T19:03:00"
+  },
+  {
+    "test_id": 10064,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 226,
+    "p95_response_time_ms": 601,
+    "requests": 14564,
+    "errors": 30,
+    "timestamp": "2026-02-14T19:04:00"
+  },
+  {
+    "test_id": 10065,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 271,
+    "p95_response_time_ms": 276,
+    "requests": 17442,
+    "errors": 9,
+    "timestamp": "2026-02-14T19:05:00"
+  },
+  {
+    "test_id": 10066,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 405,
+    "p95_response_time_ms": 407,
+    "requests": 14540,
+    "errors": 3,
+    "timestamp": "2026-02-14T19:06:00"
+  },
+  {
+    "test_id": 10067,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 334,
+    "p95_response_time_ms": 370,
+    "requests": 14219,
+    "errors": 42,
+    "timestamp": "2026-02-14T19:07:00"
+  },
+  {
+    "test_id": 10068,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 334,
+    "p95_response_time_ms": 488,
+    "requests": 18296,
+    "errors": 10,
+    "timestamp": "2026-02-14T19:08:00"
+  },
+  {
+    "test_id": 10069,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 149,
+    "p95_response_time_ms": 771,
+    "requests": 19103,
+    "errors": 1,
+    "timestamp": "2026-02-14T19:09:00"
+  },
+  {
+    "test_id": 10070,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 305,
+    "p95_response_time_ms": 686,
+    "requests": 11505,
+    "errors": 16,
+    "timestamp": "2026-02-14T19:10:00"
+  },
+  {
+    "test_id": 10071,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 373,
+    "p95_response_time_ms": 757,
+    "requests": 14148,
+    "errors": 47,
+    "timestamp": "2026-02-14T19:11:00"
+  },
+  {
+    "test_id": 10072,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 499,
+    "p95_response_time_ms": 281,
+    "requests": 15154,
+    "errors": 44,
+    "timestamp": "2026-02-14T19:12:00"
+  },
+  {
+    "test_id": 10073,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 211,
+    "p95_response_time_ms": 650,
+    "requests": 9369,
+    "errors": 49,
+    "timestamp": "2026-02-14T19:13:00"
+  },
+  {
+    "test_id": 10074,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 134,
+    "p95_response_time_ms": 496,
+    "requests": 18113,
+    "errors": 37,
+    "timestamp": "2026-02-14T19:14:00"
+  },
+  {
+    "test_id": 10075,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 222,
+    "p95_response_time_ms": 320,
+    "requests": 17888,
+    "errors": 7,
+    "timestamp": "2026-02-14T19:15:00"
+  },
+  {
+    "test_id": 10076,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 270,
+    "p95_response_time_ms": 375,
+    "requests": 10249,
+    "errors": 32,
+    "timestamp": "2026-02-14T19:16:00"
+  },
+  {
+    "test_id": 10077,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 407,
+    "p95_response_time_ms": 490,
+    "requests": 9762,
+    "errors": 42,
+    "timestamp": "2026-02-14T19:17:00"
+  },
+  {
+    "test_id": 10078,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 239,
+    "p95_response_time_ms": 624,
+    "requests": 8249,
+    "errors": 38,
+    "timestamp": "2026-02-14T19:18:00"
+  },
+  {
+    "test_id": 10079,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 251,
+    "p95_response_time_ms": 469,
+    "requests": 1003,
+    "errors": 20,
+    "timestamp": "2026-02-14T19:19:00"
+  },
+  {
+    "test_id": 10080,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 454,
+    "p95_response_time_ms": 541,
+    "requests": 18375,
+    "errors": 29,
+    "timestamp": "2026-02-14T19:20:00"
+  },
+  {
+    "test_id": 10081,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 472,
+    "p95_response_time_ms": 782,
+    "requests": 15234,
+    "errors": 22,
+    "timestamp": "2026-02-14T19:21:00"
+  },
+  {
+    "test_id": 10082,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 213,
+    "p95_response_time_ms": 241,
+    "requests": 6547,
+    "errors": 31,
+    "timestamp": "2026-02-14T19:22:00"
+  },
+  {
+    "test_id": 10083,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 184,
+    "p95_response_time_ms": 288,
+    "requests": 10962,
+    "errors": 13,
+    "timestamp": "2026-02-14T19:23:00"
+  },
+  {
+    "test_id": 10084,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 113,
+    "p95_response_time_ms": 417,
+    "requests": 13438,
+    "errors": 35,
+    "timestamp": "2026-02-14T19:24:00"
+  },
+  {
+    "test_id": 10085,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 348,
+    "p95_response_time_ms": 266,
+    "requests": 1043,
+    "errors": 36,
+    "timestamp": "2026-02-14T19:25:00"
+  },
+  {
+    "test_id": 10086,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 254,
+    "p95_response_time_ms": 796,
+    "requests": 19269,
+    "errors": 38,
+    "timestamp": "2026-02-14T19:26:00"
+  },
+  {
+    "test_id": 10087,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 472,
+    "p95_response_time_ms": 371,
+    "requests": 12772,
+    "errors": 36,
+    "timestamp": "2026-02-14T19:27:00"
+  },
+  {
+    "test_id": 10088,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 144,
+    "p95_response_time_ms": 388,
+    "requests": 17385,
+    "errors": 14,
+    "timestamp": "2026-02-14T19:28:00"
+  },
+  {
+    "test_id": 10089,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 416,
+    "p95_response_time_ms": 779,
+    "requests": 9411,
+    "errors": 15,
+    "timestamp": "2026-02-14T19:29:00"
+  },
+  {
+    "test_id": 10090,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 329,
+    "p95_response_time_ms": 303,
+    "requests": 7594,
+    "errors": 41,
+    "timestamp": "2026-02-14T19:30:00"
+  },
+  {
+    "test_id": 10091,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 146,
+    "p95_response_time_ms": 477,
+    "requests": 8265,
+    "errors": 36,
+    "timestamp": "2026-02-14T19:31:00"
+  },
+  {
+    "test_id": 10092,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 387,
+    "p95_response_time_ms": 385,
+    "requests": 18498,
+    "errors": 32,
+    "timestamp": "2026-02-14T19:32:00"
+  },
+  {
+    "test_id": 10093,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 285,
+    "p95_response_time_ms": 779,
+    "requests": 19707,
+    "errors": 45,
+    "timestamp": "2026-02-14T19:33:00"
+  },
+  {
+    "test_id": 10094,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 179,
+    "p95_response_time_ms": 609,
+    "requests": 15953,
+    "errors": 23,
+    "timestamp": "2026-02-14T19:34:00"
+  },
+  {
+    "test_id": 10095,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 425,
+    "p95_response_time_ms": 725,
+    "requests": 18115,
+    "errors": 33,
+    "timestamp": "2026-02-14T19:35:00"
+  },
+  {
+    "test_id": 10096,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 386,
+    "p95_response_time_ms": 718,
+    "requests": 17432,
+    "errors": 31,
+    "timestamp": "2026-02-14T19:36:00"
+  },
+  {
+    "test_id": 10097,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 366,
+    "p95_response_time_ms": 609,
+    "requests": 11578,
+    "errors": 5,
+    "timestamp": "2026-02-14T19:37:00"
+  },
+  {
+    "test_id": 10098,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 428,
+    "p95_response_time_ms": 486,
+    "requests": 8083,
+    "errors": 41,
+    "timestamp": "2026-02-14T19:38:00"
+  },
+  {
+    "test_id": 10099,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 281,
+    "p95_response_time_ms": 514,
+    "requests": 18436,
+    "errors": 26,
+    "timestamp": "2026-02-14T19:39:00"
+  },
+  {
+    "test_id": 10100,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 258,
+    "p95_response_time_ms": 712,
+    "requests": 14867,
+    "errors": 45,
+    "timestamp": "2026-02-14T19:40:00"
+  },
+  {
+    "test_id": 10101,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 457,
+    "p95_response_time_ms": 218,
+    "requests": 10158,
+    "errors": 27,
+    "timestamp": "2026-02-14T19:41:00"
+  },
+  {
+    "test_id": 10102,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 258,
+    "p95_response_time_ms": 356,
+    "requests": 12891,
+    "errors": 43,
+    "timestamp": "2026-02-14T19:42:00"
+  },
+  {
+    "test_id": 10103,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 287,
+    "p95_response_time_ms": 758,
+    "requests": 15553,
+    "errors": 6,
+    "timestamp": "2026-02-14T19:43:00"
+  },
+  {
+    "test_id": 10104,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 410,
+    "p95_response_time_ms": 514,
+    "requests": 7389,
+    "errors": 3,
+    "timestamp": "2026-02-14T19:44:00"
+  },
+  {
+    "test_id": 10105,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 142,
+    "p95_response_time_ms": 552,
+    "requests": 15716,
+    "errors": 14,
+    "timestamp": "2026-02-14T19:45:00"
+  },
+  {
+    "test_id": 10106,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 332,
+    "p95_response_time_ms": 580,
+    "requests": 1943,
+    "errors": 21,
+    "timestamp": "2026-02-14T19:46:00"
+  },
+  {
+    "test_id": 10107,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 125,
+    "p95_response_time_ms": 503,
+    "requests": 12269,
+    "errors": 26,
+    "timestamp": "2026-02-14T19:47:00"
+  },
+  {
+    "test_id": 10108,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 399,
+    "p95_response_time_ms": 274,
+    "requests": 3433,
+    "errors": 37,
+    "timestamp": "2026-02-14T19:48:00"
+  },
+  {
+    "test_id": 10109,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 354,
+    "p95_response_time_ms": 519,
+    "requests": 3798,
+    "errors": 15,
+    "timestamp": "2026-02-14T19:49:00"
+  },
+  {
+    "test_id": 10110,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 275,
+    "p95_response_time_ms": 689,
+    "requests": 11938,
+    "errors": 44,
+    "timestamp": "2026-02-14T19:50:00"
+  },
+  {
+    "test_id": 10111,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 482,
+    "p95_response_time_ms": 768,
+    "requests": 15539,
+    "errors": 13,
+    "timestamp": "2026-02-14T19:51:00"
+  },
+  {
+    "test_id": 10112,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 186,
+    "p95_response_time_ms": 788,
+    "requests": 6833,
+    "errors": 14,
+    "timestamp": "2026-02-14T19:52:00"
+  },
+  {
+    "test_id": 10113,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 461,
+    "p95_response_time_ms": 480,
+    "requests": 8287,
+    "errors": 3,
+    "timestamp": "2026-02-14T19:53:00"
+  },
+  {
+    "test_id": 10114,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 449,
+    "p95_response_time_ms": 794,
+    "requests": 3674,
+    "errors": 2,
+    "timestamp": "2026-02-14T19:54:00"
+  },
+  {
+    "test_id": 10115,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 393,
+    "p95_response_time_ms": 480,
+    "requests": 1430,
+    "errors": 36,
+    "timestamp": "2026-02-14T19:55:00"
+  },
+  {
+    "test_id": 10116,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 394,
+    "p95_response_time_ms": 234,
+    "requests": 12282,
+    "errors": 4,
+    "timestamp": "2026-02-14T19:56:00"
+  },
+  {
+    "test_id": 10117,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 165,
+    "p95_response_time_ms": 752,
+    "requests": 9104,
+    "errors": 30,
+    "timestamp": "2026-02-14T19:57:00"
+  },
+  {
+    "test_id": 10118,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 387,
+    "p95_response_time_ms": 208,
+    "requests": 5544,
+    "errors": 20,
+    "timestamp": "2026-02-14T19:58:00"
+  },
+  {
+    "test_id": 10119,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 139,
+    "p95_response_time_ms": 286,
+    "requests": 12026,
+    "errors": 13,
+    "timestamp": "2026-02-14T19:59:00"
+  },
+  {
+    "test_id": 10120,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 111,
+    "p95_response_time_ms": 744,
+    "requests": 8149,
+    "errors": 35,
+    "timestamp": "2026-02-14T20:00:00"
+  },
+  {
+    "test_id": 10121,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 229,
+    "p95_response_time_ms": 399,
+    "requests": 12580,
+    "errors": 29,
+    "timestamp": "2026-02-14T20:01:00"
+  },
+  {
+    "test_id": 10122,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 203,
+    "p95_response_time_ms": 416,
+    "requests": 13000,
+    "errors": 23,
+    "timestamp": "2026-02-14T20:02:00"
+  },
+  {
+    "test_id": 10123,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 326,
+    "p95_response_time_ms": 608,
+    "requests": 16682,
+    "errors": 19,
+    "timestamp": "2026-02-14T20:03:00"
+  },
+  {
+    "test_id": 10124,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 500,
+    "p95_response_time_ms": 442,
+    "requests": 17434,
+    "errors": 15,
+    "timestamp": "2026-02-14T20:04:00"
+  },
+  {
+    "test_id": 10125,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 147,
+    "p95_response_time_ms": 493,
+    "requests": 6567,
+    "errors": 46,
+    "timestamp": "2026-02-14T20:05:00"
+  },
+  {
+    "test_id": 10126,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 454,
+    "p95_response_time_ms": 737,
+    "requests": 12106,
+    "errors": 11,
+    "timestamp": "2026-02-14T20:06:00"
+  },
+  {
+    "test_id": 10127,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 304,
+    "p95_response_time_ms": 471,
+    "requests": 11971,
+    "errors": 34,
+    "timestamp": "2026-02-14T20:07:00"
+  },
+  {
+    "test_id": 10128,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 144,
+    "p95_response_time_ms": 377,
+    "requests": 13600,
+    "errors": 48,
+    "timestamp": "2026-02-14T20:08:00"
+  },
+  {
+    "test_id": 10129,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 137,
+    "p95_response_time_ms": 633,
+    "requests": 2040,
+    "errors": 43,
+    "timestamp": "2026-02-14T20:09:00"
+  },
+  {
+    "test_id": 10130,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 337,
+    "p95_response_time_ms": 315,
+    "requests": 9962,
+    "errors": 2,
+    "timestamp": "2026-02-14T20:10:00"
+  },
+  {
+    "test_id": 10131,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 165,
+    "p95_response_time_ms": 764,
+    "requests": 10113,
+    "errors": 25,
+    "timestamp": "2026-02-14T20:11:00"
+  },
+  {
+    "test_id": 10132,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 399,
+    "p95_response_time_ms": 582,
+    "requests": 4791,
+    "errors": 15,
+    "timestamp": "2026-02-14T20:12:00"
+  },
+  {
+    "test_id": 10133,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 110,
+    "p95_response_time_ms": 370,
+    "requests": 14523,
+    "errors": 9,
+    "timestamp": "2026-02-14T20:13:00"
+  },
+  {
+    "test_id": 10134,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 242,
+    "p95_response_time_ms": 542,
+    "requests": 8378,
+    "errors": 11,
+    "timestamp": "2026-02-14T20:14:00"
+  },
+  {
+    "test_id": 10135,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 453,
+    "p95_response_time_ms": 720,
+    "requests": 15339,
+    "errors": 48,
+    "timestamp": "2026-02-14T20:15:00"
+  },
+  {
+    "test_id": 10136,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 149,
+    "p95_response_time_ms": 377,
+    "requests": 14978,
+    "errors": 7,
+    "timestamp": "2026-02-14T20:16:00"
+  },
+  {
+    "test_id": 10137,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 404,
+    "p95_response_time_ms": 288,
+    "requests": 19927,
+    "errors": 6,
+    "timestamp": "2026-02-14T20:17:00"
+  },
+  {
+    "test_id": 10138,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 247,
+    "p95_response_time_ms": 653,
+    "requests": 5722,
+    "errors": 9,
+    "timestamp": "2026-02-14T20:18:00"
+  },
+  {
+    "test_id": 10139,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 286,
+    "p95_response_time_ms": 539,
+    "requests": 5366,
+    "errors": 44,
+    "timestamp": "2026-02-14T20:19:00"
+  },
+  {
+    "test_id": 10140,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 170,
+    "p95_response_time_ms": 211,
+    "requests": 3955,
+    "errors": 37,
+    "timestamp": "2026-02-14T20:20:00"
+  },
+  {
+    "test_id": 10141,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 387,
+    "p95_response_time_ms": 536,
+    "requests": 14715,
+    "errors": 12,
+    "timestamp": "2026-02-14T20:21:00"
+  },
+  {
+    "test_id": 10142,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 409,
+    "p95_response_time_ms": 413,
+    "requests": 3871,
+    "errors": 45,
+    "timestamp": "2026-02-14T20:22:00"
+  },
+  {
+    "test_id": 10143,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 163,
+    "p95_response_time_ms": 696,
+    "requests": 6610,
+    "errors": 0,
+    "timestamp": "2026-02-14T20:23:00"
+  },
+  {
+    "test_id": 10144,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 178,
+    "p95_response_time_ms": 450,
+    "requests": 4894,
+    "errors": 42,
+    "timestamp": "2026-02-14T20:24:00"
+  },
+  {
+    "test_id": 10145,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 322,
+    "p95_response_time_ms": 569,
+    "requests": 16852,
+    "errors": 22,
+    "timestamp": "2026-02-14T20:25:00"
+  },
+  {
+    "test_id": 10146,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 350,
+    "p95_response_time_ms": 488,
+    "requests": 17731,
+    "errors": 40,
+    "timestamp": "2026-02-14T20:26:00"
+  },
+  {
+    "test_id": 10147,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 252,
+    "p95_response_time_ms": 382,
+    "requests": 13600,
+    "errors": 30,
+    "timestamp": "2026-02-14T20:27:00"
+  },
+  {
+    "test_id": 10148,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 411,
+    "p95_response_time_ms": 344,
+    "requests": 5938,
+    "errors": 49,
+    "timestamp": "2026-02-14T20:28:00"
+  },
+  {
+    "test_id": 10149,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 325,
+    "p95_response_time_ms": 707,
+    "requests": 8940,
+    "errors": 10,
+    "timestamp": "2026-02-14T20:29:00"
+  },
+  {
+    "test_id": 10150,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 252,
+    "p95_response_time_ms": 460,
+    "requests": 16692,
+    "errors": 28,
+    "timestamp": "2026-02-14T20:30:00"
+  },
+  {
+    "test_id": 10151,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 435,
+    "p95_response_time_ms": 655,
+    "requests": 1087,
+    "errors": 5,
+    "timestamp": "2026-02-14T20:31:00"
+  },
+  {
+    "test_id": 10152,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 167,
+    "p95_response_time_ms": 343,
+    "requests": 14175,
+    "errors": 11,
+    "timestamp": "2026-02-14T20:32:00"
+  },
+  {
+    "test_id": 10153,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 168,
+    "p95_response_time_ms": 438,
+    "requests": 10538,
+    "errors": 6,
+    "timestamp": "2026-02-14T20:33:00"
+  },
+  {
+    "test_id": 10154,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 417,
+    "p95_response_time_ms": 428,
+    "requests": 13327,
+    "errors": 50,
+    "timestamp": "2026-02-14T20:34:00"
+  },
+  {
+    "test_id": 10155,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 178,
+    "p95_response_time_ms": 563,
+    "requests": 16436,
+    "errors": 34,
+    "timestamp": "2026-02-14T20:35:00"
+  },
+  {
+    "test_id": 10156,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 477,
+    "p95_response_time_ms": 508,
+    "requests": 14677,
+    "errors": 31,
+    "timestamp": "2026-02-14T20:36:00"
+  },
+  {
+    "test_id": 10157,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 101,
+    "p95_response_time_ms": 715,
+    "requests": 6173,
+    "errors": 22,
+    "timestamp": "2026-02-14T20:37:00"
+  },
+  {
+    "test_id": 10158,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 186,
+    "p95_response_time_ms": 624,
+    "requests": 7168,
+    "errors": 6,
+    "timestamp": "2026-02-14T20:38:00"
+  },
+  {
+    "test_id": 10159,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 388,
+    "p95_response_time_ms": 529,
+    "requests": 18531,
+    "errors": 47,
+    "timestamp": "2026-02-14T20:39:00"
+  },
+  {
+    "test_id": 10160,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 137,
+    "p95_response_time_ms": 574,
+    "requests": 10183,
+    "errors": 2,
+    "timestamp": "2026-02-14T20:40:00"
+  },
+  {
+    "test_id": 10161,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 499,
+    "p95_response_time_ms": 665,
+    "requests": 8986,
+    "errors": 3,
+    "timestamp": "2026-02-14T20:41:00"
+  },
+  {
+    "test_id": 10162,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 361,
+    "p95_response_time_ms": 630,
+    "requests": 9115,
+    "errors": 29,
+    "timestamp": "2026-02-14T20:42:00"
+  },
+  {
+    "test_id": 10163,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 143,
+    "p95_response_time_ms": 366,
+    "requests": 11373,
+    "errors": 33,
+    "timestamp": "2026-02-14T20:43:00"
+  },
+  {
+    "test_id": 10164,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 399,
+    "p95_response_time_ms": 438,
+    "requests": 10846,
+    "errors": 45,
+    "timestamp": "2026-02-14T20:44:00"
+  },
+  {
+    "test_id": 10165,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 357,
+    "p95_response_time_ms": 643,
+    "requests": 12110,
+    "errors": 45,
+    "timestamp": "2026-02-14T20:45:00"
+  },
+  {
+    "test_id": 10166,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 224,
+    "p95_response_time_ms": 537,
+    "requests": 19240,
+    "errors": 37,
+    "timestamp": "2026-02-14T20:46:00"
+  },
+  {
+    "test_id": 10167,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 321,
+    "p95_response_time_ms": 746,
+    "requests": 10389,
+    "errors": 29,
+    "timestamp": "2026-02-14T20:47:00"
+  },
+  {
+    "test_id": 10168,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 455,
+    "p95_response_time_ms": 669,
+    "requests": 17506,
+    "errors": 22,
+    "timestamp": "2026-02-14T20:48:00"
+  },
+  {
+    "test_id": 10169,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 268,
+    "p95_response_time_ms": 413,
+    "requests": 18129,
+    "errors": 1,
+    "timestamp": "2026-02-14T20:49:00"
+  },
+  {
+    "test_id": 10170,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 138,
+    "p95_response_time_ms": 446,
+    "requests": 14183,
+    "errors": 30,
+    "timestamp": "2026-02-14T20:50:00"
+  },
+  {
+    "test_id": 10171,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 208,
+    "p95_response_time_ms": 414,
+    "requests": 5054,
+    "errors": 20,
+    "timestamp": "2026-02-14T20:51:00"
+  },
+  {
+    "test_id": 10172,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 343,
+    "p95_response_time_ms": 358,
+    "requests": 9646,
+    "errors": 20,
+    "timestamp": "2026-02-14T20:52:00"
+  },
+  {
+    "test_id": 10173,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 128,
+    "p95_response_time_ms": 683,
+    "requests": 4580,
+    "errors": 42,
+    "timestamp": "2026-02-14T20:53:00"
+  },
+  {
+    "test_id": 10174,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 432,
+    "p95_response_time_ms": 417,
+    "requests": 9166,
+    "errors": 6,
+    "timestamp": "2026-02-14T20:54:00"
+  },
+  {
+    "test_id": 10175,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 220,
+    "p95_response_time_ms": 315,
+    "requests": 11008,
+    "errors": 40,
+    "timestamp": "2026-02-14T20:55:00"
+  },
+  {
+    "test_id": 10176,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 106,
+    "p95_response_time_ms": 464,
+    "requests": 17878,
+    "errors": 15,
+    "timestamp": "2026-02-14T20:56:00"
+  },
+  {
+    "test_id": 10177,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 166,
+    "p95_response_time_ms": 783,
+    "requests": 3947,
+    "errors": 1,
+    "timestamp": "2026-02-14T20:57:00"
+  },
+  {
+    "test_id": 10178,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 303,
+    "p95_response_time_ms": 594,
+    "requests": 18766,
+    "errors": 34,
+    "timestamp": "2026-02-14T20:58:00"
+  },
+  {
+    "test_id": 10179,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 268,
+    "p95_response_time_ms": 575,
+    "requests": 2244,
+    "errors": 29,
+    "timestamp": "2026-02-14T20:59:00"
+  },
+  {
+    "test_id": 10180,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 334,
+    "p95_response_time_ms": 576,
+    "requests": 6873,
+    "errors": 6,
+    "timestamp": "2026-02-14T21:00:00"
+  },
+  {
+    "test_id": 10181,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 177,
+    "p95_response_time_ms": 785,
+    "requests": 12730,
+    "errors": 39,
+    "timestamp": "2026-02-14T21:01:00"
+  },
+  {
+    "test_id": 10182,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 416,
+    "p95_response_time_ms": 454,
+    "requests": 19390,
+    "errors": 3,
+    "timestamp": "2026-02-14T21:02:00"
+  },
+  {
+    "test_id": 10183,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 202,
+    "p95_response_time_ms": 551,
+    "requests": 12951,
+    "errors": 19,
+    "timestamp": "2026-02-14T21:03:00"
+  },
+  {
+    "test_id": 10184,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 189,
+    "p95_response_time_ms": 366,
+    "requests": 7930,
+    "errors": 14,
+    "timestamp": "2026-02-14T21:04:00"
+  },
+  {
+    "test_id": 10185,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 313,
+    "p95_response_time_ms": 540,
+    "requests": 3114,
+    "errors": 25,
+    "timestamp": "2026-02-14T21:05:00"
+  },
+  {
+    "test_id": 10186,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 472,
+    "p95_response_time_ms": 636,
+    "requests": 12919,
+    "errors": 14,
+    "timestamp": "2026-02-14T21:06:00"
+  },
+  {
+    "test_id": 10187,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 328,
+    "p95_response_time_ms": 596,
+    "requests": 15532,
+    "errors": 1,
+    "timestamp": "2026-02-14T21:07:00"
+  },
+  {
+    "test_id": 10188,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 304,
+    "p95_response_time_ms": 396,
+    "requests": 3785,
+    "errors": 9,
+    "timestamp": "2026-02-14T21:08:00"
+  },
+  {
+    "test_id": 10189,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 473,
+    "p95_response_time_ms": 247,
+    "requests": 5755,
+    "errors": 34,
+    "timestamp": "2026-02-14T21:09:00"
+  },
+  {
+    "test_id": 10190,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 190,
+    "p95_response_time_ms": 646,
+    "requests": 15439,
+    "errors": 0,
+    "timestamp": "2026-02-14T21:10:00"
+  },
+  {
+    "test_id": 10191,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 435,
+    "p95_response_time_ms": 605,
+    "requests": 16568,
+    "errors": 42,
+    "timestamp": "2026-02-14T21:11:00"
+  },
+  {
+    "test_id": 10192,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 400,
+    "p95_response_time_ms": 569,
+    "requests": 4132,
+    "errors": 50,
+    "timestamp": "2026-02-14T21:12:00"
+  },
+  {
+    "test_id": 10193,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 215,
+    "p95_response_time_ms": 491,
+    "requests": 1604,
+    "errors": 29,
+    "timestamp": "2026-02-14T21:13:00"
+  },
+  {
+    "test_id": 10194,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 118,
+    "p95_response_time_ms": 553,
+    "requests": 17934,
+    "errors": 20,
+    "timestamp": "2026-02-14T21:14:00"
+  },
+  {
+    "test_id": 10195,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 369,
+    "p95_response_time_ms": 693,
+    "requests": 16665,
+    "errors": 47,
+    "timestamp": "2026-02-14T21:15:00"
+  },
+  {
+    "test_id": 10196,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 117,
+    "p95_response_time_ms": 414,
+    "requests": 13755,
+    "errors": 46,
+    "timestamp": "2026-02-14T21:16:00"
+  },
+  {
+    "test_id": 10197,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 104,
+    "p95_response_time_ms": 621,
+    "requests": 4721,
+    "errors": 29,
+    "timestamp": "2026-02-14T21:17:00"
+  },
+  {
+    "test_id": 10198,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 259,
+    "p95_response_time_ms": 586,
+    "requests": 4709,
+    "errors": 38,
+    "timestamp": "2026-02-14T21:18:00"
+  },
+  {
+    "test_id": 10199,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 231,
+    "p95_response_time_ms": 786,
+    "requests": 7044,
+    "errors": 14,
+    "timestamp": "2026-02-14T21:19:00"
+  },
+  {
+    "test_id": 10200,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 440,
+    "p95_response_time_ms": 431,
+    "requests": 16318,
+    "errors": 10,
+    "timestamp": "2026-02-14T21:20:00"
+  },
+  {
+    "test_id": 10201,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 417,
+    "p95_response_time_ms": 713,
+    "requests": 16714,
+    "errors": 47,
+    "timestamp": "2026-02-14T21:21:00"
+  },
+  {
+    "test_id": 10202,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 115,
+    "p95_response_time_ms": 415,
+    "requests": 12969,
+    "errors": 15,
+    "timestamp": "2026-02-14T21:22:00"
+  },
+  {
+    "test_id": 10203,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 242,
+    "p95_response_time_ms": 470,
+    "requests": 7891,
+    "errors": 42,
+    "timestamp": "2026-02-14T21:23:00"
+  },
+  {
+    "test_id": 10204,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 223,
+    "p95_response_time_ms": 682,
+    "requests": 5170,
+    "errors": 49,
+    "timestamp": "2026-02-14T21:24:00"
+  },
+  {
+    "test_id": 10205,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 415,
+    "p95_response_time_ms": 305,
+    "requests": 16223,
+    "errors": 31,
+    "timestamp": "2026-02-14T21:25:00"
+  },
+  {
+    "test_id": 10206,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 329,
+    "p95_response_time_ms": 736,
+    "requests": 3456,
+    "errors": 31,
+    "timestamp": "2026-02-14T21:26:00"
+  },
+  {
+    "test_id": 10207,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 336,
+    "p95_response_time_ms": 394,
+    "requests": 10629,
+    "errors": 29,
+    "timestamp": "2026-02-14T21:27:00"
+  },
+  {
+    "test_id": 10208,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 305,
+    "p95_response_time_ms": 504,
+    "requests": 12174,
+    "errors": 44,
+    "timestamp": "2026-02-14T21:28:00"
+  },
+  {
+    "test_id": 10209,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 229,
+    "p95_response_time_ms": 443,
+    "requests": 2045,
+    "errors": 17,
+    "timestamp": "2026-02-14T21:29:00"
+  },
+  {
+    "test_id": 10210,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 407,
+    "p95_response_time_ms": 620,
+    "requests": 1089,
+    "errors": 22,
+    "timestamp": "2026-02-14T21:30:00"
+  },
+  {
+    "test_id": 10211,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 146,
+    "p95_response_time_ms": 343,
+    "requests": 17192,
+    "errors": 4,
+    "timestamp": "2026-02-14T21:31:00"
+  },
+  {
+    "test_id": 10212,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 326,
+    "p95_response_time_ms": 725,
+    "requests": 12180,
+    "errors": 36,
+    "timestamp": "2026-02-14T21:32:00"
+  },
+  {
+    "test_id": 10213,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 325,
+    "p95_response_time_ms": 763,
+    "requests": 2996,
+    "errors": 27,
+    "timestamp": "2026-02-14T21:33:00"
+  },
+  {
+    "test_id": 10214,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 234,
+    "p95_response_time_ms": 761,
+    "requests": 17355,
+    "errors": 26,
+    "timestamp": "2026-02-14T21:34:00"
+  },
+  {
+    "test_id": 10215,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 105,
+    "p95_response_time_ms": 527,
+    "requests": 9630,
+    "errors": 38,
+    "timestamp": "2026-02-14T21:35:00"
+  },
+  {
+    "test_id": 10216,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 248,
+    "p95_response_time_ms": 449,
+    "requests": 16190,
+    "errors": 37,
+    "timestamp": "2026-02-14T21:36:00"
+  },
+  {
+    "test_id": 10217,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 328,
+    "p95_response_time_ms": 449,
+    "requests": 8378,
+    "errors": 42,
+    "timestamp": "2026-02-14T21:37:00"
+  },
+  {
+    "test_id": 10218,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 268,
+    "p95_response_time_ms": 265,
+    "requests": 13994,
+    "errors": 50,
+    "timestamp": "2026-02-14T21:38:00"
+  },
+  {
+    "test_id": 10219,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 409,
+    "p95_response_time_ms": 411,
+    "requests": 16849,
+    "errors": 46,
+    "timestamp": "2026-02-14T21:39:00"
+  },
+  {
+    "test_id": 10220,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 110,
+    "p95_response_time_ms": 534,
+    "requests": 17011,
+    "errors": 24,
+    "timestamp": "2026-02-14T21:40:00"
+  },
+  {
+    "test_id": 10221,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 254,
+    "p95_response_time_ms": 595,
+    "requests": 12207,
+    "errors": 24,
+    "timestamp": "2026-02-14T21:41:00"
+  },
+  {
+    "test_id": 10222,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 455,
+    "p95_response_time_ms": 483,
+    "requests": 15631,
+    "errors": 7,
+    "timestamp": "2026-02-14T21:42:00"
+  },
+  {
+    "test_id": 10223,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 293,
+    "p95_response_time_ms": 634,
+    "requests": 5237,
+    "errors": 20,
+    "timestamp": "2026-02-14T21:43:00"
+  },
+  {
+    "test_id": 10224,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 273,
+    "p95_response_time_ms": 767,
+    "requests": 8393,
+    "errors": 47,
+    "timestamp": "2026-02-14T21:44:00"
+  },
+  {
+    "test_id": 10225,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 429,
+    "p95_response_time_ms": 727,
+    "requests": 14768,
+    "errors": 10,
+    "timestamp": "2026-02-14T21:45:00"
+  },
+  {
+    "test_id": 10226,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 474,
+    "p95_response_time_ms": 790,
+    "requests": 10692,
+    "errors": 38,
+    "timestamp": "2026-02-14T21:46:00"
+  },
+  {
+    "test_id": 10227,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 105,
+    "p95_response_time_ms": 670,
+    "requests": 15278,
+    "errors": 2,
+    "timestamp": "2026-02-14T21:47:00"
+  },
+  {
+    "test_id": 10228,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 490,
+    "p95_response_time_ms": 799,
+    "requests": 2519,
+    "errors": 18,
+    "timestamp": "2026-02-14T21:48:00"
+  },
+  {
+    "test_id": 10229,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 199,
+    "p95_response_time_ms": 495,
+    "requests": 16810,
+    "errors": 24,
+    "timestamp": "2026-02-14T21:49:00"
+  },
+  {
+    "test_id": 10230,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 478,
+    "p95_response_time_ms": 378,
+    "requests": 3128,
+    "errors": 10,
+    "timestamp": "2026-02-14T21:50:00"
+  },
+  {
+    "test_id": 10231,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 143,
+    "p95_response_time_ms": 266,
+    "requests": 5578,
+    "errors": 15,
+    "timestamp": "2026-02-14T21:51:00"
+  },
+  {
+    "test_id": 10232,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 429,
+    "p95_response_time_ms": 443,
+    "requests": 12922,
+    "errors": 37,
+    "timestamp": "2026-02-14T21:52:00"
+  },
+  {
+    "test_id": 10233,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 399,
+    "p95_response_time_ms": 618,
+    "requests": 8967,
+    "errors": 43,
+    "timestamp": "2026-02-14T21:53:00"
+  },
+  {
+    "test_id": 10234,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 245,
+    "p95_response_time_ms": 407,
+    "requests": 14802,
+    "errors": 5,
+    "timestamp": "2026-02-14T21:54:00"
+  },
+  {
+    "test_id": 10235,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 338,
+    "p95_response_time_ms": 205,
+    "requests": 7157,
+    "errors": 48,
+    "timestamp": "2026-02-14T21:55:00"
+  },
+  {
+    "test_id": 10236,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 462,
+    "p95_response_time_ms": 711,
+    "requests": 16948,
+    "errors": 47,
+    "timestamp": "2026-02-14T21:56:00"
+  },
+  {
+    "test_id": 10237,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 185,
+    "p95_response_time_ms": 514,
+    "requests": 11592,
+    "errors": 50,
+    "timestamp": "2026-02-14T21:57:00"
+  },
+  {
+    "test_id": 10238,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 308,
+    "p95_response_time_ms": 357,
+    "requests": 18784,
+    "errors": 38,
+    "timestamp": "2026-02-14T21:58:00"
+  },
+  {
+    "test_id": 10239,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 384,
+    "p95_response_time_ms": 263,
+    "requests": 5525,
+    "errors": 47,
+    "timestamp": "2026-02-14T21:59:00"
+  },
+  {
+    "test_id": 10240,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 226,
+    "p95_response_time_ms": 484,
+    "requests": 5579,
+    "errors": 22,
+    "timestamp": "2026-02-14T22:00:00"
+  },
+  {
+    "test_id": 10241,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 327,
+    "p95_response_time_ms": 425,
+    "requests": 15497,
+    "errors": 8,
+    "timestamp": "2026-02-14T22:01:00"
+  },
+  {
+    "test_id": 10242,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 171,
+    "p95_response_time_ms": 203,
+    "requests": 3950,
+    "errors": 5,
+    "timestamp": "2026-02-14T22:02:00"
+  },
+  {
+    "test_id": 10243,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 372,
+    "p95_response_time_ms": 321,
+    "requests": 13749,
+    "errors": 27,
+    "timestamp": "2026-02-14T22:03:00"
+  },
+  {
+    "test_id": 10244,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 468,
+    "p95_response_time_ms": 733,
+    "requests": 7715,
+    "errors": 35,
+    "timestamp": "2026-02-14T22:04:00"
+  },
+  {
+    "test_id": 10245,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 407,
+    "p95_response_time_ms": 796,
+    "requests": 11467,
+    "errors": 42,
+    "timestamp": "2026-02-14T22:05:00"
+  },
+  {
+    "test_id": 10246,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 480,
+    "p95_response_time_ms": 737,
+    "requests": 18798,
+    "errors": 8,
+    "timestamp": "2026-02-14T22:06:00"
+  },
+  {
+    "test_id": 10247,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 263,
+    "p95_response_time_ms": 251,
+    "requests": 10340,
+    "errors": 30,
+    "timestamp": "2026-02-14T22:07:00"
+  },
+  {
+    "test_id": 10248,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 277,
+    "p95_response_time_ms": 290,
+    "requests": 19173,
+    "errors": 26,
+    "timestamp": "2026-02-14T22:08:00"
+  },
+  {
+    "test_id": 10249,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 415,
+    "p95_response_time_ms": 535,
+    "requests": 11914,
+    "errors": 47,
+    "timestamp": "2026-02-14T22:09:00"
+  },
+  {
+    "test_id": 10250,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 169,
+    "p95_response_time_ms": 408,
+    "requests": 8384,
+    "errors": 13,
+    "timestamp": "2026-02-14T22:10:00"
+  },
+  {
+    "test_id": 10251,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 161,
+    "p95_response_time_ms": 563,
+    "requests": 8932,
+    "errors": 19,
+    "timestamp": "2026-02-14T22:11:00"
+  },
+  {
+    "test_id": 10252,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 339,
+    "p95_response_time_ms": 392,
+    "requests": 2617,
+    "errors": 20,
+    "timestamp": "2026-02-14T22:12:00"
+  },
+  {
+    "test_id": 10253,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 239,
+    "p95_response_time_ms": 534,
+    "requests": 3603,
+    "errors": 32,
+    "timestamp": "2026-02-14T22:13:00"
+  },
+  {
+    "test_id": 10254,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 323,
+    "p95_response_time_ms": 365,
+    "requests": 4875,
+    "errors": 5,
+    "timestamp": "2026-02-14T22:14:00"
+  },
+  {
+    "test_id": 10255,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 155,
+    "p95_response_time_ms": 276,
+    "requests": 19771,
+    "errors": 38,
+    "timestamp": "2026-02-14T22:15:00"
+  },
+  {
+    "test_id": 10256,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 242,
+    "p95_response_time_ms": 463,
+    "requests": 9857,
+    "errors": 2,
+    "timestamp": "2026-02-14T22:16:00"
+  },
+  {
+    "test_id": 10257,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 388,
+    "p95_response_time_ms": 263,
+    "requests": 7479,
+    "errors": 23,
+    "timestamp": "2026-02-14T22:17:00"
+  },
+  {
+    "test_id": 10258,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 267,
+    "p95_response_time_ms": 738,
+    "requests": 19117,
+    "errors": 17,
+    "timestamp": "2026-02-14T22:18:00"
+  },
+  {
+    "test_id": 10259,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 144,
+    "p95_response_time_ms": 356,
+    "requests": 7892,
+    "errors": 42,
+    "timestamp": "2026-02-14T22:19:00"
+  },
+  {
+    "test_id": 10260,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 440,
+    "p95_response_time_ms": 422,
+    "requests": 19140,
+    "errors": 45,
+    "timestamp": "2026-02-14T22:20:00"
+  },
+  {
+    "test_id": 10261,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 257,
+    "p95_response_time_ms": 388,
+    "requests": 3536,
+    "errors": 29,
+    "timestamp": "2026-02-14T22:21:00"
+  },
+  {
+    "test_id": 10262,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 342,
+    "p95_response_time_ms": 255,
+    "requests": 19712,
+    "errors": 41,
+    "timestamp": "2026-02-14T22:22:00"
+  },
+  {
+    "test_id": 10263,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 277,
+    "p95_response_time_ms": 451,
+    "requests": 17150,
+    "errors": 9,
+    "timestamp": "2026-02-14T22:23:00"
+  },
+  {
+    "test_id": 10264,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 107,
+    "p95_response_time_ms": 600,
+    "requests": 3912,
+    "errors": 48,
+    "timestamp": "2026-02-14T22:24:00"
+  },
+  {
+    "test_id": 10265,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 242,
+    "p95_response_time_ms": 361,
+    "requests": 5231,
+    "errors": 29,
+    "timestamp": "2026-02-14T22:25:00"
+  },
+  {
+    "test_id": 10266,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 110,
+    "p95_response_time_ms": 532,
+    "requests": 16064,
+    "errors": 28,
+    "timestamp": "2026-02-14T22:26:00"
+  },
+  {
+    "test_id": 10267,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 268,
+    "p95_response_time_ms": 689,
+    "requests": 11344,
+    "errors": 33,
+    "timestamp": "2026-02-14T22:27:00"
+  },
+  {
+    "test_id": 10268,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 254,
+    "p95_response_time_ms": 366,
+    "requests": 8951,
+    "errors": 50,
+    "timestamp": "2026-02-14T22:28:00"
+  },
+  {
+    "test_id": 10269,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 326,
+    "p95_response_time_ms": 564,
+    "requests": 6309,
+    "errors": 34,
+    "timestamp": "2026-02-14T22:29:00"
+  },
+  {
+    "test_id": 10270,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 239,
+    "p95_response_time_ms": 790,
+    "requests": 5113,
+    "errors": 26,
+    "timestamp": "2026-02-14T22:30:00"
+  },
+  {
+    "test_id": 10271,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 447,
+    "p95_response_time_ms": 304,
+    "requests": 4879,
+    "errors": 21,
+    "timestamp": "2026-02-14T22:31:00"
+  },
+  {
+    "test_id": 10272,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 453,
+    "p95_response_time_ms": 776,
+    "requests": 2644,
+    "errors": 11,
+    "timestamp": "2026-02-14T22:32:00"
+  },
+  {
+    "test_id": 10273,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 219,
+    "p95_response_time_ms": 659,
+    "requests": 14179,
+    "errors": 1,
+    "timestamp": "2026-02-14T22:33:00"
+  },
+  {
+    "test_id": 10274,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 265,
+    "p95_response_time_ms": 363,
+    "requests": 1295,
+    "errors": 25,
+    "timestamp": "2026-02-14T22:34:00"
+  },
+  {
+    "test_id": 10275,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 451,
+    "p95_response_time_ms": 389,
+    "requests": 2425,
+    "errors": 17,
+    "timestamp": "2026-02-14T22:35:00"
+  },
+  {
+    "test_id": 10276,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 482,
+    "p95_response_time_ms": 617,
+    "requests": 14285,
+    "errors": 33,
+    "timestamp": "2026-02-14T22:36:00"
+  },
+  {
+    "test_id": 10277,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 147,
+    "p95_response_time_ms": 363,
+    "requests": 9541,
+    "errors": 26,
+    "timestamp": "2026-02-14T22:37:00"
+  },
+  {
+    "test_id": 10278,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 403,
+    "p95_response_time_ms": 361,
+    "requests": 19752,
+    "errors": 43,
+    "timestamp": "2026-02-14T22:38:00"
+  },
+  {
+    "test_id": 10279,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 402,
+    "p95_response_time_ms": 532,
+    "requests": 6544,
+    "errors": 40,
+    "timestamp": "2026-02-14T22:39:00"
+  },
+  {
+    "test_id": 10280,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 105,
+    "p95_response_time_ms": 544,
+    "requests": 11257,
+    "errors": 7,
+    "timestamp": "2026-02-14T22:40:00"
+  },
+  {
+    "test_id": 10281,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 192,
+    "p95_response_time_ms": 268,
+    "requests": 19071,
+    "errors": 24,
+    "timestamp": "2026-02-14T22:41:00"
+  },
+  {
+    "test_id": 10282,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 311,
+    "p95_response_time_ms": 651,
+    "requests": 7533,
+    "errors": 27,
+    "timestamp": "2026-02-14T22:42:00"
+  },
+  {
+    "test_id": 10283,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 306,
+    "p95_response_time_ms": 277,
+    "requests": 7429,
+    "errors": 7,
+    "timestamp": "2026-02-14T22:43:00"
+  },
+  {
+    "test_id": 10284,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 417,
+    "p95_response_time_ms": 565,
+    "requests": 5801,
+    "errors": 26,
+    "timestamp": "2026-02-14T22:44:00"
+  },
+  {
+    "test_id": 10285,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 333,
+    "p95_response_time_ms": 798,
+    "requests": 8495,
+    "errors": 8,
+    "timestamp": "2026-02-14T22:45:00"
+  },
+  {
+    "test_id": 10286,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 496,
+    "p95_response_time_ms": 596,
+    "requests": 15576,
+    "errors": 5,
+    "timestamp": "2026-02-14T22:46:00"
+  },
+  {
+    "test_id": 10287,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 379,
+    "p95_response_time_ms": 255,
+    "requests": 18324,
+    "errors": 36,
+    "timestamp": "2026-02-14T22:47:00"
+  },
+  {
+    "test_id": 10288,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 462,
+    "p95_response_time_ms": 511,
+    "requests": 18284,
+    "errors": 37,
+    "timestamp": "2026-02-14T22:48:00"
+  },
+  {
+    "test_id": 10289,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 173,
+    "p95_response_time_ms": 540,
+    "requests": 17561,
+    "errors": 33,
+    "timestamp": "2026-02-14T22:49:00"
+  },
+  {
+    "test_id": 10290,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 308,
+    "p95_response_time_ms": 658,
+    "requests": 19371,
+    "errors": 12,
+    "timestamp": "2026-02-14T22:50:00"
+  },
+  {
+    "test_id": 10291,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 312,
+    "p95_response_time_ms": 575,
+    "requests": 4094,
+    "errors": 7,
+    "timestamp": "2026-02-14T22:51:00"
+  },
+  {
+    "test_id": 10292,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 198,
+    "p95_response_time_ms": 694,
+    "requests": 13598,
+    "errors": 28,
+    "timestamp": "2026-02-14T22:52:00"
+  },
+  {
+    "test_id": 10293,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 305,
+    "p95_response_time_ms": 459,
+    "requests": 9280,
+    "errors": 16,
+    "timestamp": "2026-02-14T22:53:00"
+  },
+  {
+    "test_id": 10294,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 259,
+    "p95_response_time_ms": 547,
+    "requests": 12799,
+    "errors": 41,
+    "timestamp": "2026-02-14T22:54:00"
+  },
+  {
+    "test_id": 10295,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 380,
+    "p95_response_time_ms": 200,
+    "requests": 13032,
+    "errors": 30,
+    "timestamp": "2026-02-14T22:55:00"
+  },
+  {
+    "test_id": 10296,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 238,
+    "p95_response_time_ms": 265,
+    "requests": 2413,
+    "errors": 26,
+    "timestamp": "2026-02-14T22:56:00"
+  },
+  {
+    "test_id": 10297,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 122,
+    "p95_response_time_ms": 772,
+    "requests": 17194,
+    "errors": 34,
+    "timestamp": "2026-02-14T22:57:00"
+  },
+  {
+    "test_id": 10298,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 112,
+    "p95_response_time_ms": 696,
+    "requests": 5814,
+    "errors": 47,
+    "timestamp": "2026-02-14T22:58:00"
+  },
+  {
+    "test_id": 10299,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 492,
+    "p95_response_time_ms": 555,
+    "requests": 16176,
+    "errors": 42,
+    "timestamp": "2026-02-14T22:59:00"
+  },
+  {
+    "test_id": 10300,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 365,
+    "p95_response_time_ms": 688,
+    "requests": 12821,
+    "errors": 7,
+    "timestamp": "2026-02-14T23:00:00"
+  },
+  {
+    "test_id": 10301,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 358,
+    "p95_response_time_ms": 591,
+    "requests": 9589,
+    "errors": 16,
+    "timestamp": "2026-02-14T23:01:00"
+  },
+  {
+    "test_id": 10302,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 412,
+    "p95_response_time_ms": 409,
+    "requests": 8918,
+    "errors": 40,
+    "timestamp": "2026-02-14T23:02:00"
+  },
+  {
+    "test_id": 10303,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 401,
+    "p95_response_time_ms": 585,
+    "requests": 3034,
+    "errors": 41,
+    "timestamp": "2026-02-14T23:03:00"
+  },
+  {
+    "test_id": 10304,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 477,
+    "p95_response_time_ms": 436,
+    "requests": 14209,
+    "errors": 38,
+    "timestamp": "2026-02-14T23:04:00"
+  },
+  {
+    "test_id": 10305,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 461,
+    "p95_response_time_ms": 392,
+    "requests": 3147,
+    "errors": 45,
+    "timestamp": "2026-02-14T23:05:00"
+  },
+  {
+    "test_id": 10306,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 254,
+    "p95_response_time_ms": 553,
+    "requests": 5699,
+    "errors": 43,
+    "timestamp": "2026-02-14T23:06:00"
+  },
+  {
+    "test_id": 10307,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 469,
+    "p95_response_time_ms": 264,
+    "requests": 14637,
+    "errors": 13,
+    "timestamp": "2026-02-14T23:07:00"
+  },
+  {
+    "test_id": 10308,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 177,
+    "p95_response_time_ms": 487,
+    "requests": 9006,
+    "errors": 25,
+    "timestamp": "2026-02-14T23:08:00"
+  },
+  {
+    "test_id": 10309,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 435,
+    "p95_response_time_ms": 270,
+    "requests": 12724,
+    "errors": 12,
+    "timestamp": "2026-02-14T23:09:00"
+  },
+  {
+    "test_id": 10310,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 445,
+    "p95_response_time_ms": 666,
+    "requests": 16355,
+    "errors": 35,
+    "timestamp": "2026-02-14T23:10:00"
+  },
+  {
+    "test_id": 10311,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 333,
+    "p95_response_time_ms": 477,
+    "requests": 4711,
+    "errors": 44,
+    "timestamp": "2026-02-14T23:11:00"
+  },
+  {
+    "test_id": 10312,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 320,
+    "p95_response_time_ms": 383,
+    "requests": 15478,
+    "errors": 20,
+    "timestamp": "2026-02-14T23:12:00"
+  },
+  {
+    "test_id": 10313,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 258,
+    "p95_response_time_ms": 644,
+    "requests": 9007,
+    "errors": 6,
+    "timestamp": "2026-02-14T23:13:00"
+  },
+  {
+    "test_id": 10314,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 434,
+    "p95_response_time_ms": 429,
+    "requests": 12076,
+    "errors": 1,
+    "timestamp": "2026-02-14T23:14:00"
+  },
+  {
+    "test_id": 10315,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 466,
+    "p95_response_time_ms": 655,
+    "requests": 1196,
+    "errors": 48,
+    "timestamp": "2026-02-14T23:15:00"
+  },
+  {
+    "test_id": 10316,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 355,
+    "p95_response_time_ms": 510,
+    "requests": 9324,
+    "errors": 5,
+    "timestamp": "2026-02-14T23:16:00"
+  },
+  {
+    "test_id": 10317,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 352,
+    "p95_response_time_ms": 577,
+    "requests": 11344,
+    "errors": 3,
+    "timestamp": "2026-02-14T23:17:00"
+  },
+  {
+    "test_id": 10318,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 406,
+    "p95_response_time_ms": 486,
+    "requests": 4448,
+    "errors": 11,
+    "timestamp": "2026-02-14T23:18:00"
+  },
+  {
+    "test_id": 10319,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 228,
+    "p95_response_time_ms": 697,
+    "requests": 9358,
+    "errors": 5,
+    "timestamp": "2026-02-14T23:19:00"
+  },
+  {
+    "test_id": 10320,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 333,
+    "p95_response_time_ms": 724,
+    "requests": 12501,
+    "errors": 18,
+    "timestamp": "2026-02-14T23:20:00"
+  },
+  {
+    "test_id": 10321,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 305,
+    "p95_response_time_ms": 729,
+    "requests": 3763,
+    "errors": 40,
+    "timestamp": "2026-02-14T23:21:00"
+  },
+  {
+    "test_id": 10322,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 417,
+    "p95_response_time_ms": 571,
+    "requests": 15177,
+    "errors": 30,
+    "timestamp": "2026-02-14T23:22:00"
+  },
+  {
+    "test_id": 10323,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 141,
+    "p95_response_time_ms": 237,
+    "requests": 16371,
+    "errors": 45,
+    "timestamp": "2026-02-14T23:23:00"
+  },
+  {
+    "test_id": 10324,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 328,
+    "p95_response_time_ms": 296,
+    "requests": 11891,
+    "errors": 23,
+    "timestamp": "2026-02-14T23:24:00"
+  },
+  {
+    "test_id": 10325,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 336,
+    "p95_response_time_ms": 475,
+    "requests": 5420,
+    "errors": 31,
+    "timestamp": "2026-02-14T23:25:00"
+  },
+  {
+    "test_id": 10326,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 120,
+    "p95_response_time_ms": 215,
+    "requests": 9103,
+    "errors": 27,
+    "timestamp": "2026-02-14T23:26:00"
+  },
+  {
+    "test_id": 10327,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 203,
+    "p95_response_time_ms": 660,
+    "requests": 12522,
+    "errors": 45,
+    "timestamp": "2026-02-14T23:27:00"
+  },
+  {
+    "test_id": 10328,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 368,
+    "p95_response_time_ms": 432,
+    "requests": 12640,
+    "errors": 10,
+    "timestamp": "2026-02-14T23:28:00"
+  },
+  {
+    "test_id": 10329,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 380,
+    "p95_response_time_ms": 541,
+    "requests": 15246,
+    "errors": 25,
+    "timestamp": "2026-02-14T23:29:00"
+  },
+  {
+    "test_id": 10330,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 251,
+    "p95_response_time_ms": 614,
+    "requests": 15606,
+    "errors": 6,
+    "timestamp": "2026-02-14T23:30:00"
+  },
+  {
+    "test_id": 10331,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 349,
+    "p95_response_time_ms": 578,
+    "requests": 5127,
+    "errors": 0,
+    "timestamp": "2026-02-14T23:31:00"
+  },
+  {
+    "test_id": 10332,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 113,
+    "p95_response_time_ms": 748,
+    "requests": 2565,
+    "errors": 9,
+    "timestamp": "2026-02-14T23:32:00"
+  },
+  {
+    "test_id": 10333,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 473,
+    "p95_response_time_ms": 506,
+    "requests": 12749,
+    "errors": 7,
+    "timestamp": "2026-02-14T23:33:00"
+  },
+  {
+    "test_id": 10334,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 324,
+    "p95_response_time_ms": 381,
+    "requests": 4115,
+    "errors": 48,
+    "timestamp": "2026-02-14T23:34:00"
+  },
+  {
+    "test_id": 10335,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 148,
+    "p95_response_time_ms": 542,
+    "requests": 12295,
+    "errors": 42,
+    "timestamp": "2026-02-14T23:35:00"
+  },
+  {
+    "test_id": 10336,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 407,
+    "p95_response_time_ms": 561,
+    "requests": 1028,
+    "errors": 39,
+    "timestamp": "2026-02-14T23:36:00"
+  },
+  {
+    "test_id": 10337,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 470,
+    "p95_response_time_ms": 259,
+    "requests": 17221,
+    "errors": 32,
+    "timestamp": "2026-02-14T23:37:00"
+  },
+  {
+    "test_id": 10338,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 394,
+    "p95_response_time_ms": 573,
+    "requests": 16542,
+    "errors": 41,
+    "timestamp": "2026-02-14T23:38:00"
+  },
+  {
+    "test_id": 10339,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 225,
+    "p95_response_time_ms": 634,
+    "requests": 8136,
+    "errors": 38,
+    "timestamp": "2026-02-14T23:39:00"
+  },
+  {
+    "test_id": 10340,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 339,
+    "p95_response_time_ms": 652,
+    "requests": 12094,
+    "errors": 40,
+    "timestamp": "2026-02-14T23:40:00"
+  },
+  {
+    "test_id": 10341,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 373,
+    "p95_response_time_ms": 357,
+    "requests": 8853,
+    "errors": 17,
+    "timestamp": "2026-02-14T23:41:00"
+  },
+  {
+    "test_id": 10342,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 242,
+    "p95_response_time_ms": 746,
+    "requests": 2388,
+    "errors": 43,
+    "timestamp": "2026-02-14T23:42:00"
+  },
+  {
+    "test_id": 10343,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 359,
+    "p95_response_time_ms": 448,
+    "requests": 6943,
+    "errors": 12,
+    "timestamp": "2026-02-14T23:43:00"
+  },
+  {
+    "test_id": 10344,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 323,
+    "p95_response_time_ms": 606,
+    "requests": 8590,
+    "errors": 8,
+    "timestamp": "2026-02-14T23:44:00"
+  },
+  {
+    "test_id": 10345,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 185,
+    "p95_response_time_ms": 369,
+    "requests": 4742,
+    "errors": 4,
+    "timestamp": "2026-02-14T23:45:00"
+  },
+  {
+    "test_id": 10346,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 482,
+    "p95_response_time_ms": 596,
+    "requests": 16214,
+    "errors": 20,
+    "timestamp": "2026-02-14T23:46:00"
+  },
+  {
+    "test_id": 10347,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 465,
+    "p95_response_time_ms": 527,
+    "requests": 1522,
+    "errors": 43,
+    "timestamp": "2026-02-14T23:47:00"
+  },
+  {
+    "test_id": 10348,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 155,
+    "p95_response_time_ms": 213,
+    "requests": 19647,
+    "errors": 3,
+    "timestamp": "2026-02-14T23:48:00"
+  },
+  {
+    "test_id": 10349,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 451,
+    "p95_response_time_ms": 655,
+    "requests": 15134,
+    "errors": 36,
+    "timestamp": "2026-02-14T23:49:00"
+  },
+  {
+    "test_id": 10350,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 242,
+    "p95_response_time_ms": 261,
+    "requests": 4924,
+    "errors": 49,
+    "timestamp": "2026-02-14T23:50:00"
+  },
+  {
+    "test_id": 10351,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 323,
+    "p95_response_time_ms": 652,
+    "requests": 10448,
+    "errors": 10,
+    "timestamp": "2026-02-14T23:51:00"
+  },
+  {
+    "test_id": 10352,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 109,
+    "p95_response_time_ms": 755,
+    "requests": 16349,
+    "errors": 22,
+    "timestamp": "2026-02-14T23:52:00"
+  },
+  {
+    "test_id": 10353,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 165,
+    "p95_response_time_ms": 752,
+    "requests": 14878,
+    "errors": 33,
+    "timestamp": "2026-02-14T23:53:00"
+  },
+  {
+    "test_id": 10354,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 426,
+    "p95_response_time_ms": 618,
+    "requests": 17663,
+    "errors": 24,
+    "timestamp": "2026-02-14T23:54:00"
+  },
+  {
+    "test_id": 10355,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 210,
+    "p95_response_time_ms": 779,
+    "requests": 6738,
+    "errors": 20,
+    "timestamp": "2026-02-14T23:55:00"
+  },
+  {
+    "test_id": 10356,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 164,
+    "p95_response_time_ms": 254,
+    "requests": 1383,
+    "errors": 29,
+    "timestamp": "2026-02-14T23:56:00"
+  },
+  {
+    "test_id": 10357,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 484,
+    "p95_response_time_ms": 356,
+    "requests": 5366,
+    "errors": 27,
+    "timestamp": "2026-02-14T23:57:00"
+  },
+  {
+    "test_id": 10358,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 324,
+    "p95_response_time_ms": 519,
+    "requests": 7348,
+    "errors": 15,
+    "timestamp": "2026-02-14T23:58:00"
+  },
+  {
+    "test_id": 10359,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 424,
+    "p95_response_time_ms": 784,
+    "requests": 6863,
+    "errors": 41,
+    "timestamp": "2026-02-14T23:59:00"
+  },
+  {
+    "test_id": 10360,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 191,
+    "p95_response_time_ms": 396,
+    "requests": 1603,
+    "errors": 18,
+    "timestamp": "2026-02-15T00:00:00"
+  },
+  {
+    "test_id": 10361,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 211,
+    "p95_response_time_ms": 567,
+    "requests": 7168,
+    "errors": 8,
+    "timestamp": "2026-02-15T00:01:00"
+  },
+  {
+    "test_id": 10362,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 450,
+    "p95_response_time_ms": 710,
+    "requests": 13554,
+    "errors": 37,
+    "timestamp": "2026-02-15T00:02:00"
+  },
+  {
+    "test_id": 10363,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 102,
+    "p95_response_time_ms": 416,
+    "requests": 1979,
+    "errors": 2,
+    "timestamp": "2026-02-15T00:03:00"
+  },
+  {
+    "test_id": 10364,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 141,
+    "p95_response_time_ms": 387,
+    "requests": 17206,
+    "errors": 21,
+    "timestamp": "2026-02-15T00:04:00"
+  },
+  {
+    "test_id": 10365,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 280,
+    "p95_response_time_ms": 312,
+    "requests": 12033,
+    "errors": 44,
+    "timestamp": "2026-02-15T00:05:00"
+  },
+  {
+    "test_id": 10366,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 146,
+    "p95_response_time_ms": 379,
+    "requests": 10903,
+    "errors": 20,
+    "timestamp": "2026-02-15T00:06:00"
+  },
+  {
+    "test_id": 10367,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 333,
+    "p95_response_time_ms": 547,
+    "requests": 16937,
+    "errors": 26,
+    "timestamp": "2026-02-15T00:07:00"
+  },
+  {
+    "test_id": 10368,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 267,
+    "p95_response_time_ms": 644,
+    "requests": 10278,
+    "errors": 24,
+    "timestamp": "2026-02-15T00:08:00"
+  },
+  {
+    "test_id": 10369,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 439,
+    "p95_response_time_ms": 568,
+    "requests": 2482,
+    "errors": 21,
+    "timestamp": "2026-02-15T00:09:00"
+  },
+  {
+    "test_id": 10370,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 448,
+    "p95_response_time_ms": 212,
+    "requests": 12889,
+    "errors": 41,
+    "timestamp": "2026-02-15T00:10:00"
+  },
+  {
+    "test_id": 10371,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 267,
+    "p95_response_time_ms": 293,
+    "requests": 20000,
+    "errors": 1,
+    "timestamp": "2026-02-15T00:11:00"
+  },
+  {
+    "test_id": 10372,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 254,
+    "p95_response_time_ms": 358,
+    "requests": 7000,
+    "errors": 48,
+    "timestamp": "2026-02-15T00:12:00"
+  },
+  {
+    "test_id": 10373,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 286,
+    "p95_response_time_ms": 313,
+    "requests": 11754,
+    "errors": 1,
+    "timestamp": "2026-02-15T00:13:00"
+  },
+  {
+    "test_id": 10374,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 135,
+    "p95_response_time_ms": 784,
+    "requests": 3771,
+    "errors": 24,
+    "timestamp": "2026-02-15T00:14:00"
+  },
+  {
+    "test_id": 10375,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 158,
+    "p95_response_time_ms": 764,
+    "requests": 9880,
+    "errors": 34,
+    "timestamp": "2026-02-15T00:15:00"
+  },
+  {
+    "test_id": 10376,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 213,
+    "p95_response_time_ms": 745,
+    "requests": 10975,
+    "errors": 18,
+    "timestamp": "2026-02-15T00:16:00"
+  },
+  {
+    "test_id": 10377,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 252,
+    "p95_response_time_ms": 451,
+    "requests": 19993,
+    "errors": 0,
+    "timestamp": "2026-02-15T00:17:00"
+  },
+  {
+    "test_id": 10378,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 491,
+    "p95_response_time_ms": 478,
+    "requests": 4869,
+    "errors": 44,
+    "timestamp": "2026-02-15T00:18:00"
+  },
+  {
+    "test_id": 10379,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 122,
+    "p95_response_time_ms": 725,
+    "requests": 1553,
+    "errors": 38,
+    "timestamp": "2026-02-15T00:19:00"
+  },
+  {
+    "test_id": 10380,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 401,
+    "p95_response_time_ms": 598,
+    "requests": 9456,
+    "errors": 6,
+    "timestamp": "2026-02-15T00:20:00"
+  },
+  {
+    "test_id": 10381,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 407,
+    "p95_response_time_ms": 445,
+    "requests": 9323,
+    "errors": 3,
+    "timestamp": "2026-02-15T00:21:00"
+  },
+  {
+    "test_id": 10382,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 446,
+    "p95_response_time_ms": 338,
+    "requests": 17751,
+    "errors": 22,
+    "timestamp": "2026-02-15T00:22:00"
+  },
+  {
+    "test_id": 10383,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 476,
+    "p95_response_time_ms": 313,
+    "requests": 10837,
+    "errors": 5,
+    "timestamp": "2026-02-15T00:23:00"
+  },
+  {
+    "test_id": 10384,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 342,
+    "p95_response_time_ms": 770,
+    "requests": 5240,
+    "errors": 47,
+    "timestamp": "2026-02-15T00:24:00"
+  },
+  {
+    "test_id": 10385,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 498,
+    "p95_response_time_ms": 340,
+    "requests": 14606,
+    "errors": 18,
+    "timestamp": "2026-02-15T00:25:00"
+  },
+  {
+    "test_id": 10386,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 281,
+    "p95_response_time_ms": 772,
+    "requests": 4572,
+    "errors": 14,
+    "timestamp": "2026-02-15T00:26:00"
+  },
+  {
+    "test_id": 10387,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 111,
+    "p95_response_time_ms": 789,
+    "requests": 10747,
+    "errors": 33,
+    "timestamp": "2026-02-15T00:27:00"
+  },
+  {
+    "test_id": 10388,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 370,
+    "p95_response_time_ms": 721,
+    "requests": 15187,
+    "errors": 50,
+    "timestamp": "2026-02-15T00:28:00"
+  },
+  {
+    "test_id": 10389,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 127,
+    "p95_response_time_ms": 205,
+    "requests": 18920,
+    "errors": 30,
+    "timestamp": "2026-02-15T00:29:00"
+  },
+  {
+    "test_id": 10390,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 311,
+    "p95_response_time_ms": 602,
+    "requests": 3019,
+    "errors": 47,
+    "timestamp": "2026-02-15T00:30:00"
+  },
+  {
+    "test_id": 10391,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 269,
+    "p95_response_time_ms": 583,
+    "requests": 15925,
+    "errors": 39,
+    "timestamp": "2026-02-15T00:31:00"
+  },
+  {
+    "test_id": 10392,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 150,
+    "p95_response_time_ms": 334,
+    "requests": 15700,
+    "errors": 0,
+    "timestamp": "2026-02-15T00:32:00"
+  },
+  {
+    "test_id": 10393,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 417,
+    "p95_response_time_ms": 242,
+    "requests": 18837,
+    "errors": 47,
+    "timestamp": "2026-02-15T00:33:00"
+  },
+  {
+    "test_id": 10394,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 250,
+    "p95_response_time_ms": 467,
+    "requests": 5194,
+    "errors": 11,
+    "timestamp": "2026-02-15T00:34:00"
+  },
+  {
+    "test_id": 10395,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 408,
+    "p95_response_time_ms": 516,
+    "requests": 7550,
+    "errors": 27,
+    "timestamp": "2026-02-15T00:35:00"
+  },
+  {
+    "test_id": 10396,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 283,
+    "p95_response_time_ms": 329,
+    "requests": 3829,
+    "errors": 36,
+    "timestamp": "2026-02-15T00:36:00"
+  },
+  {
+    "test_id": 10397,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 265,
+    "p95_response_time_ms": 485,
+    "requests": 1425,
+    "errors": 2,
+    "timestamp": "2026-02-15T00:37:00"
+  },
+  {
+    "test_id": 10398,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 235,
+    "p95_response_time_ms": 750,
+    "requests": 15362,
+    "errors": 44,
+    "timestamp": "2026-02-15T00:38:00"
+  },
+  {
+    "test_id": 10399,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 249,
+    "p95_response_time_ms": 577,
+    "requests": 19171,
+    "errors": 3,
+    "timestamp": "2026-02-15T00:39:00"
+  },
+  {
+    "test_id": 10400,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 225,
+    "p95_response_time_ms": 569,
+    "requests": 14148,
+    "errors": 12,
+    "timestamp": "2026-02-15T00:40:00"
+  },
+  {
+    "test_id": 10401,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 302,
+    "p95_response_time_ms": 519,
+    "requests": 5308,
+    "errors": 25,
+    "timestamp": "2026-02-15T00:41:00"
+  },
+  {
+    "test_id": 10402,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 332,
+    "p95_response_time_ms": 651,
+    "requests": 9612,
+    "errors": 25,
+    "timestamp": "2026-02-15T00:42:00"
+  },
+  {
+    "test_id": 10403,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 103,
+    "p95_response_time_ms": 596,
+    "requests": 6470,
+    "errors": 35,
+    "timestamp": "2026-02-15T00:43:00"
+  },
+  {
+    "test_id": 10404,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 469,
+    "p95_response_time_ms": 727,
+    "requests": 9955,
+    "errors": 50,
+    "timestamp": "2026-02-15T00:44:00"
+  },
+  {
+    "test_id": 10405,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 292,
+    "p95_response_time_ms": 632,
+    "requests": 3773,
+    "errors": 43,
+    "timestamp": "2026-02-15T00:45:00"
+  },
+  {
+    "test_id": 10406,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 489,
+    "p95_response_time_ms": 421,
+    "requests": 4932,
+    "errors": 11,
+    "timestamp": "2026-02-15T00:46:00"
+  },
+  {
+    "test_id": 10407,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 383,
+    "p95_response_time_ms": 342,
+    "requests": 3467,
+    "errors": 17,
+    "timestamp": "2026-02-15T00:47:00"
+  },
+  {
+    "test_id": 10408,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 337,
+    "p95_response_time_ms": 244,
+    "requests": 2784,
+    "errors": 43,
+    "timestamp": "2026-02-15T00:48:00"
+  },
+  {
+    "test_id": 10409,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 324,
+    "p95_response_time_ms": 244,
+    "requests": 15849,
+    "errors": 36,
+    "timestamp": "2026-02-15T00:49:00"
+  },
+  {
+    "test_id": 10410,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 399,
+    "p95_response_time_ms": 341,
+    "requests": 19825,
+    "errors": 42,
+    "timestamp": "2026-02-15T00:50:00"
+  },
+  {
+    "test_id": 10411,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 489,
+    "p95_response_time_ms": 251,
+    "requests": 5195,
+    "errors": 17,
+    "timestamp": "2026-02-15T00:51:00"
+  },
+  {
+    "test_id": 10412,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 388,
+    "p95_response_time_ms": 247,
+    "requests": 19550,
+    "errors": 1,
+    "timestamp": "2026-02-15T00:52:00"
+  },
+  {
+    "test_id": 10413,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 356,
+    "p95_response_time_ms": 482,
+    "requests": 9122,
+    "errors": 13,
+    "timestamp": "2026-02-15T00:53:00"
+  },
+  {
+    "test_id": 10414,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 336,
+    "p95_response_time_ms": 521,
+    "requests": 8372,
+    "errors": 35,
+    "timestamp": "2026-02-15T00:54:00"
+  },
+  {
+    "test_id": 10415,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 272,
+    "p95_response_time_ms": 550,
+    "requests": 8449,
+    "errors": 47,
+    "timestamp": "2026-02-15T00:55:00"
+  },
+  {
+    "test_id": 10416,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 170,
+    "p95_response_time_ms": 353,
+    "requests": 11316,
+    "errors": 13,
+    "timestamp": "2026-02-15T00:56:00"
+  },
+  {
+    "test_id": 10417,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 200,
+    "p95_response_time_ms": 269,
+    "requests": 9356,
+    "errors": 47,
+    "timestamp": "2026-02-15T00:57:00"
+  },
+  {
+    "test_id": 10418,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 197,
+    "p95_response_time_ms": 717,
+    "requests": 2376,
+    "errors": 24,
+    "timestamp": "2026-02-15T00:58:00"
+  },
+  {
+    "test_id": 10419,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 304,
+    "p95_response_time_ms": 736,
+    "requests": 14101,
+    "errors": 41,
+    "timestamp": "2026-02-15T00:59:00"
+  },
+  {
+    "test_id": 10420,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 261,
+    "p95_response_time_ms": 420,
+    "requests": 2277,
+    "errors": 29,
+    "timestamp": "2026-02-15T01:00:00"
+  },
+  {
+    "test_id": 10421,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 125,
+    "p95_response_time_ms": 543,
+    "requests": 13930,
+    "errors": 12,
+    "timestamp": "2026-02-15T01:01:00"
+  },
+  {
+    "test_id": 10422,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 391,
+    "p95_response_time_ms": 760,
+    "requests": 16456,
+    "errors": 0,
+    "timestamp": "2026-02-15T01:02:00"
+  },
+  {
+    "test_id": 10423,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 426,
+    "p95_response_time_ms": 541,
+    "requests": 15872,
+    "errors": 18,
+    "timestamp": "2026-02-15T01:03:00"
+  },
+  {
+    "test_id": 10424,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 432,
+    "p95_response_time_ms": 272,
+    "requests": 6109,
+    "errors": 41,
+    "timestamp": "2026-02-15T01:04:00"
+  },
+  {
+    "test_id": 10425,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 139,
+    "p95_response_time_ms": 519,
+    "requests": 17073,
+    "errors": 29,
+    "timestamp": "2026-02-15T01:05:00"
+  },
+  {
+    "test_id": 10426,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 298,
+    "p95_response_time_ms": 245,
+    "requests": 6508,
+    "errors": 11,
+    "timestamp": "2026-02-15T01:06:00"
+  },
+  {
+    "test_id": 10427,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 451,
+    "p95_response_time_ms": 228,
+    "requests": 4069,
+    "errors": 24,
+    "timestamp": "2026-02-15T01:07:00"
+  },
+  {
+    "test_id": 10428,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 184,
+    "p95_response_time_ms": 207,
+    "requests": 1477,
+    "errors": 15,
+    "timestamp": "2026-02-15T01:08:00"
+  },
+  {
+    "test_id": 10429,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 379,
+    "p95_response_time_ms": 447,
+    "requests": 4569,
+    "errors": 9,
+    "timestamp": "2026-02-15T01:09:00"
+  },
+  {
+    "test_id": 10430,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 139,
+    "p95_response_time_ms": 489,
+    "requests": 7983,
+    "errors": 21,
+    "timestamp": "2026-02-15T01:10:00"
+  },
+  {
+    "test_id": 10431,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 156,
+    "p95_response_time_ms": 520,
+    "requests": 7133,
+    "errors": 22,
+    "timestamp": "2026-02-15T01:11:00"
+  },
+  {
+    "test_id": 10432,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 169,
+    "p95_response_time_ms": 379,
+    "requests": 9688,
+    "errors": 50,
+    "timestamp": "2026-02-15T01:12:00"
+  },
+  {
+    "test_id": 10433,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 495,
+    "p95_response_time_ms": 469,
+    "requests": 17430,
+    "errors": 30,
+    "timestamp": "2026-02-15T01:13:00"
+  },
+  {
+    "test_id": 10434,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 152,
+    "p95_response_time_ms": 783,
+    "requests": 15044,
+    "errors": 7,
+    "timestamp": "2026-02-15T01:14:00"
+  },
+  {
+    "test_id": 10435,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 111,
+    "p95_response_time_ms": 608,
+    "requests": 16425,
+    "errors": 27,
+    "timestamp": "2026-02-15T01:15:00"
+  },
+  {
+    "test_id": 10436,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 403,
+    "p95_response_time_ms": 458,
+    "requests": 6369,
+    "errors": 27,
+    "timestamp": "2026-02-15T01:16:00"
+  },
+  {
+    "test_id": 10437,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 356,
+    "p95_response_time_ms": 770,
+    "requests": 11615,
+    "errors": 49,
+    "timestamp": "2026-02-15T01:17:00"
+  },
+  {
+    "test_id": 10438,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 380,
+    "p95_response_time_ms": 590,
+    "requests": 14444,
+    "errors": 32,
+    "timestamp": "2026-02-15T01:18:00"
+  },
+  {
+    "test_id": 10439,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 300,
+    "p95_response_time_ms": 567,
+    "requests": 19485,
+    "errors": 17,
+    "timestamp": "2026-02-15T01:19:00"
+  },
+  {
+    "test_id": 10440,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 265,
+    "p95_response_time_ms": 645,
+    "requests": 12558,
+    "errors": 0,
+    "timestamp": "2026-02-15T01:20:00"
+  },
+  {
+    "test_id": 10441,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 433,
+    "p95_response_time_ms": 638,
+    "requests": 19676,
+    "errors": 43,
+    "timestamp": "2026-02-15T01:21:00"
+  },
+  {
+    "test_id": 10442,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 238,
+    "p95_response_time_ms": 727,
+    "requests": 3455,
+    "errors": 38,
+    "timestamp": "2026-02-15T01:22:00"
+  },
+  {
+    "test_id": 10443,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 330,
+    "p95_response_time_ms": 435,
+    "requests": 1374,
+    "errors": 3,
+    "timestamp": "2026-02-15T01:23:00"
+  },
+  {
+    "test_id": 10444,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 230,
+    "p95_response_time_ms": 445,
+    "requests": 6960,
+    "errors": 22,
+    "timestamp": "2026-02-15T01:24:00"
+  },
+  {
+    "test_id": 10445,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 365,
+    "p95_response_time_ms": 716,
+    "requests": 5488,
+    "errors": 2,
+    "timestamp": "2026-02-15T01:25:00"
+  },
+  {
+    "test_id": 10446,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 431,
+    "p95_response_time_ms": 404,
+    "requests": 7111,
+    "errors": 13,
+    "timestamp": "2026-02-15T01:26:00"
+  },
+  {
+    "test_id": 10447,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 413,
+    "p95_response_time_ms": 762,
+    "requests": 12627,
+    "errors": 47,
+    "timestamp": "2026-02-15T01:27:00"
+  },
+  {
+    "test_id": 10448,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 276,
+    "p95_response_time_ms": 435,
+    "requests": 3916,
+    "errors": 32,
+    "timestamp": "2026-02-15T01:28:00"
+  },
+  {
+    "test_id": 10449,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 491,
+    "p95_response_time_ms": 201,
+    "requests": 3209,
+    "errors": 35,
+    "timestamp": "2026-02-15T01:29:00"
+  },
+  {
+    "test_id": 10450,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 239,
+    "p95_response_time_ms": 439,
+    "requests": 5228,
+    "errors": 27,
+    "timestamp": "2026-02-15T01:30:00"
+  },
+  {
+    "test_id": 10451,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 300,
+    "p95_response_time_ms": 411,
+    "requests": 4814,
+    "errors": 23,
+    "timestamp": "2026-02-15T01:31:00"
+  },
+  {
+    "test_id": 10452,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 377,
+    "p95_response_time_ms": 335,
+    "requests": 15107,
+    "errors": 31,
+    "timestamp": "2026-02-15T01:32:00"
+  },
+  {
+    "test_id": 10453,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 486,
+    "p95_response_time_ms": 443,
+    "requests": 2426,
+    "errors": 8,
+    "timestamp": "2026-02-15T01:33:00"
+  },
+  {
+    "test_id": 10454,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 357,
+    "p95_response_time_ms": 349,
+    "requests": 18106,
+    "errors": 22,
+    "timestamp": "2026-02-15T01:34:00"
+  },
+  {
+    "test_id": 10455,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 163,
+    "p95_response_time_ms": 465,
+    "requests": 3623,
+    "errors": 9,
+    "timestamp": "2026-02-15T01:35:00"
+  },
+  {
+    "test_id": 10456,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 416,
+    "p95_response_time_ms": 751,
+    "requests": 13417,
+    "errors": 50,
+    "timestamp": "2026-02-15T01:36:00"
+  },
+  {
+    "test_id": 10457,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 282,
+    "p95_response_time_ms": 303,
+    "requests": 9384,
+    "errors": 5,
+    "timestamp": "2026-02-15T01:37:00"
+  },
+  {
+    "test_id": 10458,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 240,
+    "p95_response_time_ms": 791,
+    "requests": 3697,
+    "errors": 23,
+    "timestamp": "2026-02-15T01:38:00"
+  },
+  {
+    "test_id": 10459,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 158,
+    "p95_response_time_ms": 682,
+    "requests": 11828,
+    "errors": 15,
+    "timestamp": "2026-02-15T01:39:00"
+  },
+  {
+    "test_id": 10460,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 148,
+    "p95_response_time_ms": 708,
+    "requests": 13465,
+    "errors": 4,
+    "timestamp": "2026-02-15T01:40:00"
+  },
+  {
+    "test_id": 10461,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 201,
+    "p95_response_time_ms": 746,
+    "requests": 19102,
+    "errors": 25,
+    "timestamp": "2026-02-15T01:41:00"
+  },
+  {
+    "test_id": 10462,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 462,
+    "p95_response_time_ms": 221,
+    "requests": 6548,
+    "errors": 30,
+    "timestamp": "2026-02-15T01:42:00"
+  },
+  {
+    "test_id": 10463,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 157,
+    "p95_response_time_ms": 727,
+    "requests": 9150,
+    "errors": 29,
+    "timestamp": "2026-02-15T01:43:00"
+  },
+  {
+    "test_id": 10464,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 342,
+    "p95_response_time_ms": 551,
+    "requests": 12016,
+    "errors": 37,
+    "timestamp": "2026-02-15T01:44:00"
+  },
+  {
+    "test_id": 10465,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 205,
+    "p95_response_time_ms": 720,
+    "requests": 15557,
+    "errors": 26,
+    "timestamp": "2026-02-15T01:45:00"
+  },
+  {
+    "test_id": 10466,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 394,
+    "p95_response_time_ms": 675,
+    "requests": 1226,
+    "errors": 16,
+    "timestamp": "2026-02-15T01:46:00"
+  },
+  {
+    "test_id": 10467,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 410,
+    "p95_response_time_ms": 598,
+    "requests": 16671,
+    "errors": 1,
+    "timestamp": "2026-02-15T01:47:00"
+  },
+  {
+    "test_id": 10468,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 298,
+    "p95_response_time_ms": 280,
+    "requests": 12765,
+    "errors": 33,
+    "timestamp": "2026-02-15T01:48:00"
+  },
+  {
+    "test_id": 10469,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 456,
+    "p95_response_time_ms": 427,
+    "requests": 13692,
+    "errors": 11,
+    "timestamp": "2026-02-15T01:49:00"
+  },
+  {
+    "test_id": 10470,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 215,
+    "p95_response_time_ms": 209,
+    "requests": 17773,
+    "errors": 26,
+    "timestamp": "2026-02-15T01:50:00"
+  },
+  {
+    "test_id": 10471,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 264,
+    "p95_response_time_ms": 715,
+    "requests": 5635,
+    "errors": 6,
+    "timestamp": "2026-02-15T01:51:00"
+  },
+  {
+    "test_id": 10472,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 239,
+    "p95_response_time_ms": 791,
+    "requests": 13587,
+    "errors": 50,
+    "timestamp": "2026-02-15T01:52:00"
+  },
+  {
+    "test_id": 10473,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 462,
+    "p95_response_time_ms": 436,
+    "requests": 13017,
+    "errors": 38,
+    "timestamp": "2026-02-15T01:53:00"
+  },
+  {
+    "test_id": 10474,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 490,
+    "p95_response_time_ms": 729,
+    "requests": 2526,
+    "errors": 25,
+    "timestamp": "2026-02-15T01:54:00"
+  },
+  {
+    "test_id": 10475,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 189,
+    "p95_response_time_ms": 425,
+    "requests": 15379,
+    "errors": 42,
+    "timestamp": "2026-02-15T01:55:00"
+  },
+  {
+    "test_id": 10476,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 457,
+    "p95_response_time_ms": 504,
+    "requests": 15213,
+    "errors": 18,
+    "timestamp": "2026-02-15T01:56:00"
+  },
+  {
+    "test_id": 10477,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 434,
+    "p95_response_time_ms": 406,
+    "requests": 17101,
+    "errors": 48,
+    "timestamp": "2026-02-15T01:57:00"
+  },
+  {
+    "test_id": 10478,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 346,
+    "p95_response_time_ms": 753,
+    "requests": 15162,
+    "errors": 43,
+    "timestamp": "2026-02-15T01:58:00"
+  },
+  {
+    "test_id": 10479,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 141,
+    "p95_response_time_ms": 691,
+    "requests": 11231,
+    "errors": 18,
+    "timestamp": "2026-02-15T01:59:00"
+  },
+  {
+    "test_id": 10480,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 395,
+    "p95_response_time_ms": 740,
+    "requests": 12270,
+    "errors": 46,
+    "timestamp": "2026-02-15T02:00:00"
+  },
+  {
+    "test_id": 10481,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 221,
+    "p95_response_time_ms": 554,
+    "requests": 6433,
+    "errors": 5,
+    "timestamp": "2026-02-15T02:01:00"
+  },
+  {
+    "test_id": 10482,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 479,
+    "p95_response_time_ms": 302,
+    "requests": 16459,
+    "errors": 27,
+    "timestamp": "2026-02-15T02:02:00"
+  },
+  {
+    "test_id": 10483,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 108,
+    "p95_response_time_ms": 748,
+    "requests": 9524,
+    "errors": 22,
+    "timestamp": "2026-02-15T02:03:00"
+  },
+  {
+    "test_id": 10484,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 475,
+    "p95_response_time_ms": 511,
+    "requests": 9157,
+    "errors": 39,
+    "timestamp": "2026-02-15T02:04:00"
+  },
+  {
+    "test_id": 10485,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 498,
+    "p95_response_time_ms": 653,
+    "requests": 6236,
+    "errors": 22,
+    "timestamp": "2026-02-15T02:05:00"
+  },
+  {
+    "test_id": 10486,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 239,
+    "p95_response_time_ms": 325,
+    "requests": 8004,
+    "errors": 39,
+    "timestamp": "2026-02-15T02:06:00"
+  },
+  {
+    "test_id": 10487,
+    "endpoint": "/api/dashboard",
+    "avg_response_time_ms": 267,
+    "p95_response_time_ms": 628,
+    "requests": 5127,
+    "errors": 37,
+    "timestamp": "2026-02-15T02:07:00"
+  },
+  {
+    "test_id": 10488,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 388,
+    "p95_response_time_ms": 742,
+    "requests": 5161,
+    "errors": 37,
+    "timestamp": "2026-02-15T02:08:00"
+  },
+  {
+    "test_id": 10489,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 188,
+    "p95_response_time_ms": 503,
+    "requests": 7197,
+    "errors": 30,
+    "timestamp": "2026-02-15T02:09:00"
+  },
+  {
+    "test_id": 10490,
+    "endpoint": "/api/profile",
+    "avg_response_time_ms": 268,
+    "p95_response_time_ms": 322,
+    "requests": 14822,
+    "errors": 18,
+    "timestamp": "2026-02-15T02:10:00"
+  },
+  {
+    "test_id": 10491,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 354,
+    "p95_response_time_ms": 689,
+    "requests": 13684,
+    "errors": 0,
+    "timestamp": "2026-02-15T02:11:00"
+  },
+  {
+    "test_id": 10492,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 158,
+    "p95_response_time_ms": 268,
+    "requests": 16633,
+    "errors": 10,
+    "timestamp": "2026-02-15T02:12:00"
+  },
+  {
+    "test_id": 10493,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 146,
+    "p95_response_time_ms": 542,
+    "requests": 5495,
+    "errors": 27,
+    "timestamp": "2026-02-15T02:13:00"
+  },
+  {
+    "test_id": 10494,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 337,
+    "p95_response_time_ms": 204,
+    "requests": 3965,
+    "errors": 40,
+    "timestamp": "2026-02-15T02:14:00"
+  },
+  {
+    "test_id": 10495,
+    "endpoint": "/api/search",
+    "avg_response_time_ms": 183,
+    "p95_response_time_ms": 380,
+    "requests": 9033,
+    "errors": 35,
+    "timestamp": "2026-02-15T02:15:00"
+  },
+  {
+    "test_id": 10496,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 381,
+    "p95_response_time_ms": 635,
+    "requests": 2041,
+    "errors": 9,
+    "timestamp": "2026-02-15T02:16:00"
+  },
+  {
+    "test_id": 10497,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 323,
+    "p95_response_time_ms": 367,
+    "requests": 2977,
+    "errors": 17,
+    "timestamp": "2026-02-15T02:17:00"
+  },
+  {
+    "test_id": 10498,
+    "endpoint": "/api/settings",
+    "avg_response_time_ms": 247,
+    "p95_response_time_ms": 567,
+    "requests": 1802,
+    "errors": 21,
+    "timestamp": "2026-02-15T02:18:00"
+  },
+  {
+    "test_id": 10499,
+    "endpoint": "/api/login",
+    "avg_response_time_ms": 203,
+    "p95_response_time_ms": 225,
+    "requests": 18676,
+    "errors": 8,
+    "timestamp": "2026-02-15T02:19:00"
+  }
+]
