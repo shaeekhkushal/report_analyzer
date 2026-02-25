@@ -5,6 +5,7 @@ Parses metrics from JSON files (common for API responses, exported dashboards)
 
 from typing import Any, Dict
 from core.models import UniversalReport, ReportType, Metric
+from core.metric_normalizer import MetricNormalizer
 
 
 def parse_json_report(data: Any) -> UniversalReport:
@@ -30,8 +31,17 @@ def parse_json_report(data: Any) -> UniversalReport:
         # Strategy 3: Look for arrays of metrics
         _extract_array_metrics(data, metrics)
     
-    # Detect report type
-    report_type = _detect_report_type(data)
+    # Normalize metrics to universal schema
+    metrics = MetricNormalizer.normalize_metrics(metrics)
+    
+    # Calculate derived metrics
+    _calculate_derived_metrics(metrics)
+    
+    # Detect report type using normalized metrics
+    metric_names = list(metrics.keys())
+    report_type = MetricNormalizer.detect_tool_from_metrics(metric_names)
+    if report_type == ReportType.UNKNOWN:
+        report_type = _detect_report_type(data)
     
     report = UniversalReport(
         report_type=report_type,
@@ -186,6 +196,46 @@ def _extract_metadata(data: Any) -> dict:
             metadata[key] = data[key]
     
     return metadata
+
+
+def _calculate_derived_metrics(metrics: Dict[str, Metric]):
+    """Calculate metrics that can be derived from other metrics"""
+    # Calculate failure rate if we have total_requests and failed_requests
+    if "total_requests" in metrics and "failed_requests" in metrics:
+        total = metrics["total_requests"].value
+        failed = metrics["failed_requests"].value
+        
+        if total > 0 and "failure_rate" not in metrics:
+            failure_rate = (failed / total) * 100
+            metrics["failure_rate"] = Metric(
+                name="failure_rate",
+                value=failure_rate,
+                unit="%"
+            )
+    
+    # Calculate success rate if we have failure_rate
+    if "failure_rate" in metrics and "success_rate" not in metrics:
+        failure_rate = metrics["failure_rate"].value
+        success_rate = 100 - failure_rate
+        metrics["success_rate"] = Metric(
+            name="success_rate",
+            value=success_rate,
+            unit="%"
+        )
+    
+    # Calculate throughput if we have total_requests and duration
+    if "total_requests" in metrics and "test_duration" in metrics:
+        if "throughput" not in metrics:
+            total = metrics["total_requests"].value
+            duration = metrics["test_duration"].value
+            
+            if duration > 0:
+                throughput = total / duration
+                metrics["throughput"] = Metric(
+                    name="throughput",
+                    value=throughput,
+                    unit="req/s"
+                )
 
 
 def _detect_json_report(data: Any) -> bool:

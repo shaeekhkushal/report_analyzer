@@ -24,10 +24,8 @@ class AdapterRegistry:
     
     def detect(self, data: Any) -> ReportType:
         """Auto-detect report type from data"""
-        # Try detectors in order of specificity
-        for report_type in [ReportType.K6, ReportType.GRAFANA, ReportType.LIGHTHOUSE, 
-                           ReportType.LOCUST, ReportType.JMETER]:
-            detector = self._detectors.get(report_type)
+        # Try all registered detectors
+        for report_type, detector in self._detectors.items():
             if detector and detector(data):
                 return report_type
         
