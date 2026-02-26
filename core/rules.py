@@ -1,4 +1,5 @@
 from core.models import UniversalReport, TestSummary
+from core.metric_normalizer import MetricNormalizer
 
 def interpret(report):
     """Generate insights from report (supports both UniversalReport and TestSummary for backward compatibility)"""
@@ -19,37 +20,33 @@ def _interpret_universal(report: UniversalReport) -> list:
     """Generate detailed, descriptive insights from UniversalReport metrics"""
     insights = []
     
-    # Look for common metric patterns
-    metrics = {m.name: m.value for m in report.all_metrics()}
+    # Convert metrics to dict for easy access
+    metrics_dict = {m.name: m for m in report.all_metrics()}
+    
+    # Use MetricNormalizer for robust metric retrieval with fallbacks
+    get_metric = lambda name, default=None: MetricNormalizer.get_metric_value(metrics_dict, name, default if default is not None else 0.0)
     
     # ====== RELIABILITY ANALYSIS ======
-    failure_rate = None
-    failed_requests = None
-    total_requests = None
+    failure_rate = get_metric("failure_rate")
+    failed_requests = get_metric("failed_requests")
+    total_requests = get_metric("total_requests")
     
-    if "failure_rate" in metrics:
-        failure_rate = metrics["failure_rate"]
-    if "failed_requests" in metrics:
-        failed_requests = metrics["failed_requests"]
-    if "total_requests" in metrics:
-        total_requests = metrics["total_requests"]
-    
-    if failure_rate is not None:
+    if failure_rate > 0 or failed_requests > 0:
         if failure_rate > 5:
             insights.append(f"CRITICAL RELIABILITY ISSUE: Failure rate is {failure_rate:.2f}% - {failed_requests:.0f} requests failed out of {total_requests:.0f} total. This indicates systemic issues in the application.")
         elif failure_rate > 1:
             insights.append(f"MODERATE RELIABILITY CONCERN: Failure rate at {failure_rate:.2f}% is above the recommended threshold of 1%. Investigate root causes to improve stability.")
-        else:
+        elif total_requests > 0:
             insights.append(f"HEALTHY RELIABILITY: Failure rate is {failure_rate:.2f}% - well within acceptable limits. System is stable and dependable.")
     
     # ====== LATENCY & RESPONSE TIME ANALYSIS ======
-    p95_latency = metrics.get("http_duration_p95")
-    p99_latency = metrics.get("http_duration_p99")
-    avg_latency = metrics.get("http_duration_avg")
-    median_latency = metrics.get("http_duration_median")
-    min_latency = metrics.get("http_duration_min")
-    max_latency = metrics.get("http_duration_max")
-    p90_latency = metrics.get("http_duration_p90")
+    p95_latency = get_metric("http_duration_p95")
+    p99_latency = get_metric("http_duration_p99")
+    avg_latency = get_metric("http_duration_avg")
+    median_latency = get_metric("http_duration_median")
+    min_latency = get_metric("http_duration_min")
+    max_latency = get_metric("http_duration_max")
+    p90_latency = get_metric("http_duration_p90")
     
     # Detailed latency assessment
     if avg_latency is not None and median_latency is not None:
@@ -87,19 +84,17 @@ def _interpret_universal(report: UniversalReport) -> list:
                 insights.append(f"ACCEPTABLE OUTLIERS: Maximum response time ({max_latency:.0f}ms) is {outlier_ratio:.1f}x the P95 ({p95_latency:.0f}ms). Shows some variability but generally reasonable.")
     
     # ====== THROUGHPUT ANALYSIS ======
-    throughput = metrics.get("throughput")
-    requests_per_sec = None
+    throughput = get_metric("throughput")
     
-    if throughput is not None:
-        requests_per_sec = throughput
-        if requests_per_sec < 1:
+    if throughput > 0:
+        if throughput < 1:
             insights.append(f"LOW THROUGHPUT: System is handling less than 1 request/sec. Verify load test configuration and system capacity.")
-        elif requests_per_sec < 10:
-            insights.append(f"LIGHT LOAD: Throughput at {requests_per_sec:.1f} requests/sec suggests low-scale load testing.")
-        elif requests_per_sec > 100:
-            insights.append(f"HIGH THROUGHPUT: System is processing {requests_per_sec:.1f} requests/sec - good capacity under test load.")
+        elif throughput < 10:
+            insights.append(f"LIGHT LOAD: Throughput at {throughput:.1f} requests/sec suggests low-scale load testing.")
+        elif throughput > 100:
+            insights.append(f"HIGH THROUGHPUT: System is processing {throughput:.1f} requests/sec - good capacity under test load.")
         else:
-            insights.append(f"STEADY THROUGHPUT: System maintains {requests_per_sec:.1f} requests/sec - consistent performance.")
+            insights.append(f"STEADY THROUGHPUT: System maintains {throughput:.1f} requests/sec - consistent performance.")
     
     # ====== COMPREHENSIVE SUMMARY ======
     # If no specific insights were generated

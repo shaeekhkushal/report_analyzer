@@ -97,3 +97,191 @@ class UniversalReport:
     
     def __repr__(self) -> str:
         return f"UniversalReport({self.report_type.value}, {len(self.metrics)} metrics)"
+
+
+# ============================================================================
+# Enhanced Analysis Models (for detailed reporting)
+# ============================================================================
+
+class MetricStatus(Enum):
+    """Status evaluation for metrics"""
+    PASS = "pass"
+    WARNING = "warning"
+    FAIL = "fail"
+    INFO = "info"
+
+
+class IssueCategory(Enum):
+    """Issue severity categories"""
+    CRITICAL = "critical"
+    HIGH = "high"
+    MODERATE = "moderate"
+    WARNING = "warning"
+    INFO = "info"
+
+
+@dataclass
+class MetricWithStatus:
+    """Metric with evaluation status and target"""
+    name: str
+    value: float
+    unit: str
+    status: MetricStatus
+    target: Optional[float] = None
+    target_unit: Optional[str] = None
+    percentile: Optional[int] = None
+    notes: str = ""
+    
+    def status_icon(self) -> str:
+        """Get status icon for display"""
+        icons = {
+            MetricStatus.PASS: "✅",
+            MetricStatus.WARNING: "⚠️",
+            MetricStatus.FAIL: "❌",
+            MetricStatus.INFO: "ℹ️"
+        }
+        return icons.get(self.status, "")
+    
+    def formatted_value(self) -> str:
+        """Format value with unit"""
+        if self.value >= 1000 and self.unit == "ms":
+            return f"{self.value/1000:.2f}s"
+        elif self.value >= 1000000:
+            return f"{self.value/1000000:.2f}M"
+        elif self.value >= 1000:
+            return f"{self.value/1000:.2f}K"
+        return f"{self.value:.2f}{self.unit}"
+    
+    def gap_percentage(self) -> Optional[float]:
+        """Calculate gap from target as percentage"""
+        if self.target is None or self.target == 0:
+            return None
+        return ((self.value - self.target) / self.target) * 100
+
+
+@dataclass
+class Issue:
+    """Identified performance or reliability issue"""
+    id: int
+    title: str
+    category: IssueCategory
+    details: str
+    impact: str
+    likely_causes: list[str] = field(default_factory=list)
+    affected_metrics: list[str] = field(default_factory=list)
+    citations: list[str] = field(default_factory=list)
+    
+    def severity_label(self) -> str:
+        """Get formatted severity label"""
+        return self.category.value.upper()
+
+
+@dataclass
+class Recommendation:
+    """Actionable recommendation"""
+    category: str  # "Immediate Diagnostics", "Targeted Optimizations", "Next Test Iteration"
+    title: str
+    details: str
+    priority: int = 1  # 1=high, 2=medium, 3=low
+    related_issues: list[int] = field(default_factory=list)
+
+
+@dataclass
+class ExecutiveSummary:
+    """High-level test summary"""
+    test_type: str
+    test_date: Optional[str] = None
+    duration: Optional[str] = None
+    test_status: str = "UNKNOWN"
+    source_file: str = ""
+    key_findings: list[str] = field(default_factory=list)
+    critical_issue: Optional[str] = None
+
+
+@dataclass
+class RequestStatistics:
+    """Request-level statistics"""
+    total_requests: Optional[MetricWithStatus] = None
+    failed_requests: Optional[MetricWithStatus] = None
+    success_rate: Optional[MetricWithStatus] = None
+    requests_rate: Optional[MetricWithStatus] = None
+
+
+@dataclass
+class ResponseTimeAnalysis:
+    """Response time breakdown"""
+    avg: Optional[MetricWithStatus] = None
+    median: Optional[MetricWithStatus] = None
+    p90: Optional[MetricWithStatus] = None
+    p95: Optional[MetricWithStatus] = None
+    p99: Optional[MetricWithStatus] = None
+    max: Optional[MetricWithStatus] = None
+    min: Optional[MetricWithStatus] = None
+
+
+@dataclass
+class LoadProfile:
+    """Load test configuration"""
+    min_vus: Optional[int] = None
+    max_vus: Optional[int] = None
+    iterations: Optional[int] = None
+    duration: Optional[str] = None
+    rps: Optional[float] = None
+
+
+@dataclass
+class KeyMetrics:
+    """Organized key metrics"""
+    request_statistics: RequestStatistics = field(default_factory=RequestStatistics)
+    response_time_analysis: ResponseTimeAnalysis = field(default_factory=ResponseTimeAnalysis)
+    load_profile: LoadProfile = field(default_factory=LoadProfile)
+    custom_metrics: list[MetricWithStatus] = field(default_factory=list)
+
+
+@dataclass
+class IssueList:
+    """Categorized issues"""
+    critical: list[Issue] = field(default_factory=list)
+    high: list[Issue] = field(default_factory=list)
+    moderate: list[Issue] = field(default_factory=list)
+    warnings: list[Issue] = field(default_factory=list)
+    info: list[Issue] = field(default_factory=list)
+    
+    def all_issues(self) -> list[Issue]:
+        """Get all issues in severity order"""
+        return (self.critical + self.high + self.moderate + 
+                self.warnings + self.info)
+    
+    def total_count(self) -> int:
+        """Total number of issues"""
+        return len(self.all_issues())
+
+
+@dataclass
+class GapAnalysis:
+    """Performance gap analysis"""
+    metric: str
+    current: float
+    target: float
+    unit: str
+    gap_percentage: float
+    required_improvement: str
+
+
+@dataclass
+class DetailedAnalysis:
+    """Complete detailed analysis output"""
+    executive_summary: ExecutiveSummary
+    key_metrics: KeyMetrics
+    issues: IssueList
+    recommendations: list[Recommendation] = field(default_factory=list)
+    gap_analysis: list[GapAnalysis] = field(default_factory=list)
+    source_report: Optional[UniversalReport] = None
+    
+    def has_critical_issues(self) -> bool:
+        """Check if there are critical issues"""
+        return len(self.issues.critical) > 0
+    
+    def total_issues(self) -> int:
+        """Total number of issues"""
+        return self.issues.total_count()
